@@ -31,6 +31,7 @@ record(subArray, "AIR:BFT_TENT:HUMI")
 	field(PREC, "1")
 	field(INDX, "1")
 }
+
 #TRG rack
 record(waveform, "TR700W2:DATA")
 {
@@ -64,6 +65,7 @@ record(subArray, "AIR:TRG_RACK:HUMI")
 	field(PREC, "1")
 	field(INDX, "1")
 }
+
 #BH2 rack
 record(waveform, "TR700W3:DATA")
 {
@@ -97,6 +99,7 @@ record(subArray, "AIR:BH2_RACK:HUMI")
 	field(PREC, "1")
 	field(INDX, "1")
 }
+
 
 # #KURAMA tent
 # record(waveform, "TR700W3:DATA")

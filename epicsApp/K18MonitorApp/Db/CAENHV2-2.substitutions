@@ -148,4 +148,3 @@ file "db/CAENHV_B.template" {
    { crate=2, slot=2, name=CH23:Pw,     ch=144 }
    { crate=2, slot=2, name=CH23:Status, ch=145 }
 }
-

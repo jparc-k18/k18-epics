@@ -32,6 +32,7 @@ static long read_ai(aiRecord *rec)
   device_private *pdev = (device_private *)rec->dpvt;
 
   int ch = pdev->channel;
+
   long nelem;
   dbGetNelements(&rec->inp, &nelem);
   pdev->nelem = nelem;

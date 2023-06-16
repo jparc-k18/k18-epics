@@ -25,6 +25,7 @@
 
 static long read_wf(waveformRecord *rec)
 {
+
   // connect socket w/ proxy server
   UserSocket sock( "192.168.30.1", 8080, 0.5 );
 

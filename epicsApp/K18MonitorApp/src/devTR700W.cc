@@ -38,11 +38,13 @@ static long read_wf(waveformRecord *rec)
   }
   // printf("IP : %s\n", host);
 
+
   UserSocket sock( host, 80 );
   if( !sock.IsOpen() )
     return 0;
 
   // send HTTP request
+
   //  char cmdline[] = "GET /cdata.inc HTTP/1.0\r\nUser-Agent: Wget/1.12 (linux-gnu)\r\nAccept: */*\r\nHost: 192.168.30.31\r\nConnection: Keep-Alive\r\n\r\n ";
 
   char cmdline[] = "GET /cdata.inc HTTP/1.0\r\nUser-Agent: Wget/1.12 (linux-gnu)\r\nAccept: */*\r\n Connection: Keep-Alive\r\n\r\n ";
@@ -52,6 +54,7 @@ static long read_wf(waveformRecord *rec)
   std::string buf;
   int total_len=0;
   char c;
+
   while ( sock.Read( &c, 1 ) > 0 ) {
     if(0x20 < c && c <0x7f){
       buf += c;
@@ -59,6 +62,7 @@ static long read_wf(waveformRecord *rec)
     }
     if(total_len > 65535) break;
   }
+
 
   int offset = 271 - total_len;
 
@@ -69,6 +73,10 @@ static long read_wf(waveformRecord *rec)
     t = time(NULL);
     std::string date(ctime(&t));
     date = date.substr(0, date.length()-1);
+<<<<<<< HEAD
+
+=======
+>>>>>>> f39bf39 (major change)
     printf("%s | %s TR700W comunication error\n", host, date.c_str());
     return 0;
   }

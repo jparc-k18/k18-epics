@@ -42,6 +42,7 @@ static long read_wf(waveformRecord *rec)
   std::string buf;
   int total_len=0;
   char c;
+
   while ( sock.Read( &c, 1 ) > 0 ) {
     buf += c;
     total_len++;
@@ -82,7 +83,6 @@ static long read_wf(waveformRecord *rec)
   }
 
 
-
   // fill
   float* ptr = (float*)rec->bptr;
   int ndata=0;
@@ -102,6 +102,7 @@ static long read_wf(waveformRecord *rec)
   }
 
   rec->nord = ndata;
+
 
   return 0;
 }

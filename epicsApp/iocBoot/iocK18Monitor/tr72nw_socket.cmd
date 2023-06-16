@@ -13,6 +13,7 @@ K18Monitor_registerRecordDeviceDriver pdbbase
 
 ## Load record instances
 dbLoadRecords("db/TR72NW_socket.db")
+# dbLoadRecords("db/TR72NW_socket_WCD.db")
 
 cd ${TOP}/iocBoot/${IOC}
 iocInit

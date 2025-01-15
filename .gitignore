@@ -14,3 +14,4 @@ epicsApp/db/
 epicsApp/dbd/
 test/
 epicsApp/pyioc/error_log/
+runsummary/magnet/

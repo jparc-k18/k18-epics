@@ -80,7 +80,8 @@ def run():
           val_dict[pv.pvname][0] = pv.value
         except:
           logger.error(f'{pv.pvname} {pv.value} {pv.timestamp}')
-          val_dict[pv.pvname][0] = numpy.NAN
+#          val_dict[pv.pvname][0] = numpy.NAN
+          val_dict[pv.pvname][0] = numpy.nan
         val_dict[pv.pvname][1] = pv.timestamp
       logger.debug(f'tree.Fill()')
       tree.Fill()

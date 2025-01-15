@@ -77,7 +77,7 @@ if __name__ == '__main__':
   log_conf = os.path.join(top_dir, 'logging_config.yml')
   with open(log_conf, 'r') as f:
     logging.config.dictConfig(yaml.safe_load(f))
-  # make_magnet_param()
+#  make_magnet_param()
   run(71000)
 
   # epics_getter.get(70183, 'K18MAG:D4:FLD')

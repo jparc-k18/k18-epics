@@ -1,3 +1,0 @@
-epicsEnvSet("IOC","iocK18Monitor")
-epicsEnvSet("TOP","/misc/software/AlmaLinux-9/k18epics/epicsApp")
-epicsEnvSet("EPICS_BASE","/home/sks/software/k18epics/base")

@@ -8,10 +8,17 @@ if [ -z $ioc_cmd ]; then
     exit
 fi
 
+echo "debug ioc_dir $ioc_dir"
+
+if [ ! -d $ioc_dir ]; then
+    echo "Not found such dir: $ioc_dir"
+    exit
+fi
 cd $ioc_dir
 
 while true
 do
     ../../bin/linux-`uname -m`/K18Monitor $ioc_cmd
+    # ../bin/linux-`uname -m`/K18Monitor $ioc_cmd
     sleep 1
 done

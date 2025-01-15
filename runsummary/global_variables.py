@@ -5,7 +5,7 @@ import os
 # data_path = '/group/had/sks/E70/JPARC2023May/e70_2023may'
 # subdata_path = '/group/had/sks/E70/JPARC2023May/subdata'
 
-data_path = '/misc/hdd1/e70_2024may'
+data_path = '/misc/raid/e70_2024may'
 # subdata_path = '/misc/hdd4/old/E70SubData2023May'
 subdata_path = '/misc/subdata'
 

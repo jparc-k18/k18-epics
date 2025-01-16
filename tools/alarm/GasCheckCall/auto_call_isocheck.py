@@ -12,8 +12,8 @@ else:
   last_check_time = sys.argv[1]
 
 #____ User param ____
-timediff_minutes=30 #[min]
-# timediff_minutes=0.2 #[min]
+# timediff_minutes=30 #[min]
+timediff_minutes=0.2 #[min]
 
 #____________________
 last_check_arr=last_check_time.split(":")
@@ -32,7 +32,8 @@ while True:
     elapsed_time = datetime.datetime.combine(datetime.date.today(), current_time) - datetime.datetime.combine(datetime.date.today()-datetime.timedelta(days=1), last_time)
   if elapsed_time.total_seconds() >= timediff_minutes * 60:  # [sec]
     print("Please go isoC4H10 check!")
-    command = 'play -q /home/sks/sound/isoC4H10check.wav'
+    # command = 'play -q /home/sks/sound/isoC4H10check.wav'
+    command = 'aplay -q /home/sks/sound/isoC4H10check.wav'    
     subprocess.run(command, shell=True)
     time.sleep(1)
     subprocess.run(command, shell=True)

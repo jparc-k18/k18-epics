@@ -11,7 +11,7 @@ print("Last check: ", last_check_time)
 #____ User param ____
 #timediff_minutes=2*60+30 #[min]
 timediff_minutes=2*60 #[min]
-# timediff_minutes=0.5 #[min]
+#timediff_minutes=0.5 #[min]
 #timediff_minutes=8*60 #[min]
 #____________________
 last_check_arr=last_check_time.split(":")
@@ -31,8 +31,8 @@ while True:
     # subprocess.Popen(['aplay','/home/sks/sound/gascheck.wav'])
     # time.sleep(4)
     # subprocess.Popen(['aplay','/home/sks/sound/gascheck.wav'])
-    # command = 'aplay /home/sks/sound/gascheck.wav'
-    command = 'play -q /home/sks/sound/gascheck.wav'
+    command = 'aplay -q /home/sks/sound/gascheck.wav'
+    # command = 'play -q /home/sks/sound/gascheck.wav'
     subprocess.run(command, shell=True)
     time.sleep(1)
     subprocess.run(command, shell=True)

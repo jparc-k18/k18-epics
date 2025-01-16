@@ -7,6 +7,8 @@
 
 #include <unistd.h>
 #include <arpa/inet.h>
+#include <arpa/inet.h>
+#include <iostream>
 
 #include "alarm.h"
 #include "cvtTable.h"

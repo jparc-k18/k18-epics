@@ -35,8 +35,8 @@ static long read_ai(aiRecord *rec)
 
   //rehold?
   char sig_rehold[50];
-  int flag_rehold = 0; 
-  FILE *f_sighold = fopen("/home/sks/work/NMR_rehold/rehold_signal.txt","r");
+  int flag_rehold = 0;
+  FILE *f_sighold = fopen("/home/sks/k18epics/tools/k18mag/rehold_signal.txt","r");
   if(f_sighold){
     fgets(sig_rehold, 50, f_sighold);
     if( sig_rehold[0]=='a' || sig_rehold[0]=='b'|| sig_rehold[0]=='c' || sig_rehold[0]=='d' ){
@@ -46,7 +46,7 @@ static long read_ai(aiRecord *rec)
     fclose(f_sighold);
     if( flag_rehold ){
       printf("SKS NMR send rehold command\n");
-      FILE *f_sigout = fopen("/home/sks/work/NMR_rehold/rehold_signal.txt","w");
+      FILE *f_sigout = fopen("/home/sks/k18epics/tools/k18mag/rehold_signal.txt","w");
       fprintf(f_sigout, "0");
       fclose(f_sigout);
       sock->Write(sig_rehold, 1); // seng range setting (force reset val to manual value)

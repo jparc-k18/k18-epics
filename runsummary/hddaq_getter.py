@@ -92,7 +92,7 @@ def scaler(run_number):
   ]
   for k in scaler_keys:
     info[k] = str()
-  scaler_txt = os.path.join(g.subdata_path, 'scaler_2024may',
+  scaler_txt = os.path.join(g.subdata_path, 'scaler_2025jan',
                             f'scaler_{run_number:05d}.txt')
   rec_info = recorder_info()
   if run_number in rec_info:
@@ -129,7 +129,7 @@ def scaler(run_number):
 def trigger(run_number=None):
   if run_number is not None:
     trigger_log = os.path.join(
-      g.subdata_path, f'trigger_2023may/trigger_{run_number:05d}.log')
+      g.subdata_path, f'trigger_2025jan/trigger_{run_number:05d}.log')
   if run_number is None or not os.path.isfile(trigger_log):
     logger.debug(f'cannot find {trigger_log}')
     return ['' for i in range(30)]

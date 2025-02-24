@@ -173,7 +173,7 @@ def make_magnet_param():
       continue
     stop_dt = datetime.datetime.strptime(
       os.path.basename(r), 'k18epics_%Y%m%d_%H%M%S.root')
-    if stop_dt < datetime.datetime(2024, 4, 1):
+    if stop_dt < datetime.datetime(2025, 1, 1):
       continue
     f = ROOT.TFile(r)
     t = f.Get('epics')
@@ -231,7 +231,7 @@ def read_all():
     r = os.path.join(epics_dir, r)
     stop_dt = datetime.datetime.strptime(
       os.path.basename(r), 'k18epics_%Y%m%d_%H%M%S.root')
-    if stop_dt < datetime.datetime(2024, 4, 1):
+    if stop_dt < datetime.datetime(2025, 1, 1):
       continue
     logger.debug(stop_dt)
     if '.root' not in r:
@@ -266,6 +266,8 @@ def read_all():
           n = None
         if n is None:
           continue
+        if (v['StopTime'] - dt).total_seconds() <= 60:
+          continue
         # if (ROOT.TMath.IsNaN(t.HDDAQ_RUN_NUMBER[0]) or
         #     t.HDDAQ_RUN_NUMBER[0] < 70000):
         #   continue
@@ -279,7 +281,8 @@ def read_all():
         for k, v in event.items():
           if 'HULTRG' in k:
             # if k in trigger_dict[n]:
-            #   logger.debug(f'{trigger_dict[n][k]} = {v[0]}?')
+            # if n == 72584 and ('RGN3' in k or 'RGN4' in k):
+            #   logger.info(f'{dt} {n} {k} = {v[0]}?')
             trigger_dict[n][k] = int(v[0])
           elif k == 'K18MAG_S2SD1_FLD' and v[0] == 0:
             pass

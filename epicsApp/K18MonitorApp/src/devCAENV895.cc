@@ -36,6 +36,8 @@ static long read_wf(waveformRecord *rec)
   }
 
   std::string command = "ssh ";
+  // command += " -o HostKeyAlgolithms=+ssh-rsa";
+  // command += " -o PublicKeyAcceptedTypes=+ssh-rsa ";
   command += host;
   command += " cat CaenV895/last_param.log";
   FILE *pipe = ::popen(command.c_str(), "r");

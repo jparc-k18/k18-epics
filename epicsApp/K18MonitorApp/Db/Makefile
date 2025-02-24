@@ -10,7 +10,8 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------------------
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
-DB += SKSD4.db
+# DB += SKSD4.db
+DB += K18D4.db
 # DB += KURAMA.db
 DB += S2SD1.db
 DB += TR700W.db

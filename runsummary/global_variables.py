@@ -5,12 +5,14 @@ import os
 # data_path = '/group/had/sks/E70/JPARC2023May/e70_2023may'
 # subdata_path = '/group/had/sks/E70/JPARC2023May/subdata'
 
-data_path = '/misc/raid/e70_2024may'
+# data_path = '/misc/raid/e70_2024may'
 # subdata_path = '/misc/hdd4/old/E70SubData2023May'
+
+data_path = '/misc/raid/e70_2025jan'
 subdata_path = '/misc/subdata'
 
-# run_summary = 'tmp.csv'
-run_summary = os.path.join(subdata_path, 'E70RunSummary2024May.csv')
+#run_summary = 'tmp.csv'
+run_summary = os.path.join(subdata_path, 'E70RunSummary2025Jan.csv')
 
 labels = [
   'RunNumber',

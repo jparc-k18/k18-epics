@@ -11,6 +11,7 @@ print("Last check: ", last_check_time)
 #____ User param ____
 #timediff_minutes=2*60+30 #[min]
 timediff_minutes=2*60 #[min]
+#timediff_minutes=4*60 #[min]
 #timediff_minutes=0.5 #[min]
 #timediff_minutes=8*60 #[min]
 #____________________

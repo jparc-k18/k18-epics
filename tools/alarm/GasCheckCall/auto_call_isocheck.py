@@ -12,8 +12,8 @@ else:
   last_check_time = sys.argv[1]
 
 #____ User param ____
-# timediff_minutes=30 #[min]
-timediff_minutes=0.2 #[min]
+timediff_minutes=30 #[min]
+# timediff_minutes=0.2 #[min]
 
 #____________________
 last_check_arr=last_check_time.split(":")

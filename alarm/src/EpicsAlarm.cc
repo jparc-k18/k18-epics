@@ -38,7 +38,8 @@ void
 AlarmSound( void )
 {
   // gSystem->Exec("sh script/call_alarm.sh 2>/dev/null &");
-  gSystem->Exec("aplay --device=hw:1,0 script/alarm_sound.wav 2>/dev/null &");
+  // gSystem->Exec("aplay --device=hw:0,0 script/alarm_sound.wav 2>/dev/null &");
+  gSystem->Exec("aplay script/alarm_sound.wav 2>/dev/null &");
 }
 
 //_____________________________________________________________________________

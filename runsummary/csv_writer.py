@@ -44,8 +44,8 @@ def write(values):
 
 #______________________________________________________________________________
 def make_magnet_param(info, stddev):
-  output_dir = 'magnet'
-#  output_dir = '/misc/subdata/K18MagnetParam'
+  # output_dir = 'magnet'
+  output_dir = '/misc/subdata/K18MagnetParam'
   for n, i in info.items():
     with open(os.path.join(output_dir, f'K18MagnetParam_{n:05d}'), 'w') as f:
       w = csv.writer(f, delimiter='\t')

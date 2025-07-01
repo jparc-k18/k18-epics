@@ -8,11 +8,14 @@ import os
 # data_path = '/misc/raid/e70_2024may'
 # subdata_path = '/misc/hdd4/old/E70SubData2023May'
 
-data_path = '/misc/raid/e70_2025jan'
+# data_path = '/misc/raid/e70_2025jan'
+# subdata_path = '/misc/subdata'
+
+data_path = '/misc/raid/e70_2025apr'
 subdata_path = '/misc/subdata'
 
 #run_summary = 'tmp.csv'
-run_summary = os.path.join(subdata_path, 'E70RunSummary2025Jan.csv')
+run_summary = os.path.join(subdata_path, 'E70RunSummary2025Apr.csv')
 
 labels = [
   'RunNumber',

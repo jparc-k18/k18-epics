@@ -8,10 +8,10 @@ import global_variables as g
 logger = logging.getLogger('__main__').getChild(__name__)
 
 NumOfRegion2 = 6
-BeamDetectors = ['BH1', 'BH2', 'BAC', 'HTOF', 'HTOF-Cosmic', 'SCH']
-ScatDetectors = ['BEAM', 'HTOF-Mp2', 'HTOF-Mp3', 'TOF', 'AC1', 'WC',
+BeamDetectors = ['BH1', 'BH2', 'BAC', 'HTOF', 'Other1', 'SSAND']
+ScatDetectors = ['BEAM', 'HTOF-Mp2', 'Other3', 'TOF', 'AC1', 'WC',
                  'M2D1', 'BVH', # 'M2D2',
-                 'M3D', 'HTOF-Mp4', 'HTOF-Mp5']
+                 'M3D', 'HTOF-Mp4', 'SSOR']
 
 registers = [
   'RGN1::SEL_TOF',

@@ -84,7 +84,7 @@ if __name__ == '__main__':
   with open(log_conf, 'r') as f:
     logging.config.dictConfig(yaml.safe_load(f))
 #  make_magnet_param()
-  run(72000)
+  run(74000)
 
   # epics_getter.get(70183, 'K18MAG:D4:FLD')
   # hddaq_getter.event_number(70183)

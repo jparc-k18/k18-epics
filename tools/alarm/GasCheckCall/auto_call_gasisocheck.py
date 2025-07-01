@@ -18,6 +18,7 @@ print("Last check: ", last_check_time)
 
 #____ User param ____
 gas_timediff_minutes=2*60 #[min]
+#gas_timediff_minutes=4*60 #[min]
 iso_timediff_minutes=30   #[min]
 # gas_timediff_minutes=1 #[min]
 # iso_timediff_minutes=0.5  #[min]
@@ -40,7 +41,8 @@ def main():
     check_interval = min(gas_timediff_minutes, iso_timediff_minutes)/5.
     print(f"check time: {current_time.replace(microsecond=0)} (interval: {check_interval} min)")
 
-    last_gas_time = call_check('gas', gas_timediff_minutes, current_time, last_gas_time)
+    #last_gas_time = call_check('gas', gas_timediff_minutes, current_time, last_gas_time)
+    last_gas_time = call_check('GasHe', gas_timediff_minutes, current_time, last_gas_time)
     last_iso_time = call_check('isoC4H10', iso_timediff_minutes, current_time, last_iso_time)
 
     time.sleep(check_interval*60)

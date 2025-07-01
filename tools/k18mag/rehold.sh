@@ -5,5 +5,5 @@
 # command "c": 0.55 - 1.20T
 # command "d": 1.20 - 2.00T
 
-echo "c" > temp.txt
+echo "d" > temp.txt
 mv temp.txt rehold_signal.txt

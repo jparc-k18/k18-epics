@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import datetime
+from datetime import datetime
 import subprocess
 import time
 import os
@@ -17,6 +17,13 @@ from pathlib import Path
 
 import global_variable as g
 
+log_file="monitork18mag.log"
+
+RED="\033[31m"
+YLW="\033[33m"
+DEF="\033[0m"
+BLD="\033[1m"
+
 #___________________________
 def clear_screen():
   os.system('cls' if os.name == 'nt' else 'clear')
@@ -30,6 +37,8 @@ def restart_ioc(session):
     text=True
   )
   # check if the session exists or not
+  with open(log_file, 'a') as f:
+    f.write(f'{datetime.now().replace(microsecond=0)} : restart_ioc({session}) {result.returncode} \n')
   if result.returncode == 0:
     killcmd = ["tmux","kill-session","-t", session]
     subprocess.run(killcmd, check=True)
@@ -45,8 +54,8 @@ def restart_ioc(session):
   time.sleep(10)
 
 def ippower_cycle(server,ip, port, user, password):
-    with open('ippower.log', 'a') as f:
-      f.write(f'{datetime.datetime.now()}\n')
+    with open(log_file, 'a') as f:
+      f.write(f'{datetime.now().replace(microsecond=0)} : ippower_cycle\n')
     proxies = {
       "http": f"http://{server}",
       "https": f"https://{server}"
@@ -60,15 +69,15 @@ def ippower_cycle(server,ip, port, user, password):
     on_url = f"http://{user}:{password}@{ip}/set.cmd?cmd=setpower+p{port}=1"
     session.get(on_url)
     print(f"Port {port} ON")
-    time.sleep(5)
+    time.sleep(10)
 
 def get_pv_value(pv_name):
     try:
       pv = epics.PV(pv_name)
       time.sleep(0.1)
       if not pv.connected:
-        with open('epics_notconnected.log', 'a') as f:
-          f.write(f'pv not connected in get_pv_value: {datetime.datetime.now()}\n')
+        with open(log_file, 'a') as f:
+          f.write(f'{datetime.now().replace(microsecond=0)} : pv not connected in get_pv_value({pv_name})\n')
         print(f"Error in connecting to pv in  get_pv_value({pv_name})")
         return None
       pv_value = epics.caget(pv_name,timeout=1.0)
@@ -115,11 +124,12 @@ def main():
     user = g.USERNAME
     password = g.PASSWORD
     iocname_k18d4 = "ioc_k18d4"
-    k18d4_max_size = 5
+    k18d4_max_size = 8
     s2sd1_max_size = 100
     k18d4list = deque(maxlen=k18d4_max_size)
     s2sd1list = deque(maxlen=s2sd1_max_size)
     while True:
+      clear_screen()
       k18d4field = get_pv_value("K18MAG:D4:FLD")
       k18d4cmon = get_pv_value("HDPS:K18D4:CMON")
       k18d4cset = get_pv_value("HDPS:K18D4:CSET")
@@ -129,24 +139,24 @@ def main():
         k18d4list.append(k18d4field)
         print(f"--------------------------")
         print(f"K18D4 FLD: {k18d4field:.5f} [T]")
-        print(f"beam mom: {mom:.5f} [GeV/c]")
+        print(f"beam mom:  {mom:.5f} [GeV/c]")
         if abs(k18d4field) < 0.05:
           if (k18d4cdiff<100 and k18d4cset>100):
-            print("\033[31m\033[1mERROR\033[0m")
+            print(f"{RED}{BLC}ERROR{DEF}")
             ippower_cycle(server,ip, port, user, password)
-            with open('ippower.log', 'a') as f:
-              f.write(f'k18d4fld {k18d4field}: {datetime.datetime.now()}\n')
+            with open(log_file, 'a') as f:
+              f.write(f'{datetime.now().replace(microsecond=0)} : k18d4fld {k18d4field}\n')
             restart_ioc(iocname_k18d4)
         if len(k18d4list)==k18d4_max_size and len(set(k18d4list))==1:
           print(f'k18d4field is the same value in {k18d4_max_size} times')
-          with open('epics_notconnected.log', 'a') as f:
-            f.write(f'k18d4field is the same value in {k18d4_max_size} times: {datetime.datetime.now()}\n')
+          with open(log_file, 'a') as f:
+            f.write(f'{datetime.now().replace(microsecond=0)} : k18d4field is the same value in {k18d4_max_size} times\n')
           ippower_cycle(server,ip, port, user, password)
           restart_ioc(iocname_k18d4)
       else:
         print("Failed to get k18d4 field value.")
-        with open('epics_notconnected.log', 'a') as f:
-          f.write(f'pv not connected in main: {datetime.datetime.now()}\n')
+        with open(log_file, 'a') as f:
+          f.write(f'{datetime.now().replace(microsecond=0)} : pv not connected in main\n')
         print(f'cmon: {k18d4cmon}, cset: {k18d4cset}, diff: {k18d4cdiff}')
         if (k18d4cdiff<100):
           # ippower_cycle(server,ip, port, user, password)
@@ -160,7 +170,7 @@ def main():
         print(f"S2SD1 Jump is monitoring...")
         s2sd1list.append(s2sd1field)
         if (abs(s2sd1field)<0.1 and s2sd1cset>100):
-          print("\033[31m\033[1mERROR\033[0m")
+          print(f"{RED}{BLD}ERROR{DEF}")
           s2sd1cmon = get_pv_value("HDPS:S2SD1:CMON")
           s2sd1cset = get_pv_value("HDPS:S2SD1:CSET")
           diff = abs(abs(s2sd1cmon)-abs(s2sd1cset))
@@ -175,10 +185,10 @@ def main():
           s2sd1list.pop()
         else:
           s2sd1mean = statistics.mean(s2sd1list)
-          print(f" mean: {s2sd1mean:.5f}[T]", end='')
+          print(f" mean:     {s2sd1mean:.5f} [T]", end='')
           if abs(s2sd1field-s2sd1mean)>0.0002:
           # if abs(s2sd1field-s2sd1mean)>0.000010:
-            print(f" (jumping!!)")
+            print(f" {YLW}(jumping!!){DEF}")
             command = 'aplay -q /home/sks/sound/d1jump.wav'
             # print(command)
             # time.sleep(5)
@@ -191,7 +201,7 @@ def main():
             print()
       else:
         # if you have error
-        print("\033[31m\033[1mERROR\033[0m")
+        print(f"{RED}{BLD}ERROR{DEF}")
         print("Failed to get s2sd1 field value.")
       time.sleep(3)
       clear_screen()

@@ -27,11 +27,11 @@ cmd_list=(
   pressdc
 
   # gas
-  tr72nw
-  misc
   # hul_scaler
 
   ### unused
+  # tr72nw
+  # misc
   # separator
   # k18line
   # aline

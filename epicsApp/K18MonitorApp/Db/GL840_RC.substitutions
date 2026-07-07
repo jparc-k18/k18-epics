@@ -1,0 +1,7 @@
+# GL840_AFT substitutions file
+# ch   :  form 1 to 7
+
+file "db/GL840_RC.template" {
+   { name=RC:X+:TEMP,  ch=1,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=RC:X-:TEMP,  ch=2,  ASLO=1, ESLO=0.005, EOFF=0 }
+}

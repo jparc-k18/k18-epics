@@ -20,6 +20,7 @@ print("Last check: ", last_check_time)
 gas_timediff_minutes=2*60 #[min]
 #gas_timediff_minutes=4*60 #[min]
 iso_timediff_minutes=30   #[min]
+#iso_timediff_minutes=8*30   #[min]
 # gas_timediff_minutes=1 #[min]
 # iso_timediff_minutes=0.5  #[min]
 #____________________

@@ -13,7 +13,8 @@ cmd_list=(
   s2sd1
   zrrx40 # slit
   gl840_aft
-  # caenhv1
+  gl840_rc
+  caenhv1
   caenhv2
   caenhv3
   caenhv4

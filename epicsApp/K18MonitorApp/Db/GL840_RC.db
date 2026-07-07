@@ -1,0 +1,31 @@
+record(waveform, "GL840_RC:DATA")
+{
+        field(DESC, "GL840-RC Data")
+	field(FTVL, "FLOAT")
+        field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "GL840_RCSup")
+	field(FLNK, "RC:X+:TEMP")
+}
+record(subArray, "RC:X+:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP, "GL840_RC:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "20")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "RC:X-:TEMP")
+}
+record(subArray, "RC:X-:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP, "GL840_RC:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "20")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}

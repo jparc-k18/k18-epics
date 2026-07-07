@@ -1,0 +1,22 @@
+record(waveform, "GL840_RC:DATA")
+{
+        field(DESC, "GL840-RC Data")
+	field(FTVL, "FLOAT")
+#        field(NELM, "20")
+        field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "GL840_RCSup")
+}
+record(ai, "$(name)")
+{
+	field(SCAN, "10 second")
+	field(INP, "GL840_RC:DATA")
+	field(DTYP, "AiZRRX40Sup")
+	field(LINR, "LINEAR")
+	field(ASLO, "$(ASLO)")
+	field(ESLO, "$(ESLO)")
+	field(EOFF, "$(EOFF)")
+	field(PHAS, "1")
+	field(DESC, "ZRRX40@$(ch)")
+}

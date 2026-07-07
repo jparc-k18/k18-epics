@@ -15,6 +15,8 @@ K18Monitor_registerRecordDeviceDriver pdbbase
 dbLoadTemplate("db/CAENHV2-0.substitutions")
 dbLoadTemplate("db/CAENHV2-2.substitutions")
 dbLoadTemplate("db/CAENHV2-6.substitutions")
+dbLoadTemplate("db/CAENHV2-10.substitutions")
+dbLoadTemplate("db/CAENHV2-14.substitutions")
 
 cd ${TOP}/iocBoot/${IOC}
 iocInit

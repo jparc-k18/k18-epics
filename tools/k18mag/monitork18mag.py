@@ -116,7 +116,6 @@ def rehold_NMR():
     else:
       print("rehold_signal.txt was not found")
 
-
 def main():
     server = g.SERVER
     ip = g.IP_ADDRESS

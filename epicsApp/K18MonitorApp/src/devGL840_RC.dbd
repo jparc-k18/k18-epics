@@ -1,0 +1,2 @@
+include "base.dbd"
+device(waveform,INST_IO,devGL840_RC,"GL840_RCSup")

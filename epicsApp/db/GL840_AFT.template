@@ -1,0 +1,22 @@
+record(waveform, "GL840_AFT:DATA")
+{
+        field(DESC, "GL840-AFT Data")
+	field(FTVL, "FLOAT")
+#        field(NELM, "20")
+        field(NELM, "7")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "GL840_AFTSup")
+}
+record(ai, "$(name)")
+{
+	field(SCAN, "10 second")
+	field(INP, "GL840_AFT:DATA")
+	field(DTYP, "AiZRRX40Sup")
+	field(PHAS, "1")
+	field(LINR, "LINEAR")
+	field(ASLO, "$(ASLO)")
+	field(ESLO, "$(ESLO)")
+	field(EOFF, "$(EOFF)")
+	field(DESC, "ZRRX40@$(ch)")
+}

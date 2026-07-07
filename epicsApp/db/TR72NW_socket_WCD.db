@@ -1,0 +1,32 @@
+#WC DOWN
+record(waveform, "TR72NW_socket-WCD:DATA")
+{
+	field(DESC, "IP|192.168.30.36|SN|0xA9,0x6B,0x18,0x52")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "TR72NW_socketSup")
+	field(FLNK, "AIR:WCD:TEMP")
+}
+record(subArray, "AIR:WCD:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket-WCD:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "AIR:WCD:HUMI")
+}
+record(subArray, "AIR:WCD:HUMI")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket-WCD:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}

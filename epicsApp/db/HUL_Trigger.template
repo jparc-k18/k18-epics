@@ -1,0 +1,19 @@
+record(waveform, "HUL_Trigger:DATA")
+{
+        field(DESC, "HUL_Trigger eb1:8901")
+	field(FTVL, "UINT64")
+        field(NELM, "251")
+	field(SCAN, "2 second")
+	field(PHAS, "0")
+	field(EGU, "s")
+	field(DTYP, "HUL_Trigger_Sup")
+}
+
+record(ai, "HULTRG:$(name)")
+{
+	field(SCAN, ".1 second")
+	field(DESC, "HUL_Trigger $(ch)")
+	field(INP, "HUL_Trigger:DATA")
+	field(DTYP, "AiHUL_Trigger_Sup")
+	field(PHAS, "1")
+}

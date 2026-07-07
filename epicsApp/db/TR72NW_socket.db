@@ -1,0 +1,96 @@
+#WC UD
+record(waveform, "TR72NW_socket-WCU:DATA")
+{
+	field(DESC, "IP|192.168.30.35|SN|0xB2,0x6B,0x18,0x52")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "TR72NW_socketSup")
+	field(FLNK, "AIR:WCU:TEMP")
+}
+record(subArray, "AIR:WCU:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket-WCU:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "AIR:WCU:HUMI")
+}
+record(subArray, "AIR:WCU:HUMI")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket-WCU:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}
+
+record(waveform, "TR72NW_socket-WCD:DATA")
+{
+	field(DESC, "IP|192.168.30.36|SN|0xA9,0x6B,0x18,0x52")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "TR72NW_socketSup")
+	field(FLNK, "AIR:WCD:TEMP")
+}
+record(subArray, "AIR:WCD:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket-WCD:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "AIR:WCD:HUMI")
+}
+record(subArray, "AIR:WCD:HUMI")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket-WCD:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}
+
+record(waveform, "TR72NW_socket-HBX:DATA")
+{
+	field(DESC, "IP|192.168.30.34|SN|0x7A,0x1C,0x18,0x52")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "TR72NW_socketSup")
+	field(FLNK, "AIR:HBX_RACK:TEMP")
+}
+record(subArray, "AIR:HBX:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket-HBX:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "AIR:HBX:HUMI")
+}
+record(subArray, "AIR:HBX:HUMI")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket-HBX:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}

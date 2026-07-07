@@ -1,0 +1,8 @@
+record(ai, "MPPC:$(det_name):$(data_type)")
+{
+        field(DESC, "MPPC $(det_name) $(data_type)")
+	field(SCAN, "Passive")
+	field(PHAS, "0")
+	field(PREC, "1")
+	field(DTYP, "MppcBiasSup")
+}

@@ -1,0 +1,32 @@
+# pmx18 for sdc vth
+record(waveform, "PMX:SDC$(id_num_sdc)_VTH:DATA")
+{
+	field(DESC, "IP:$(ip)")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "PMX18Sup")
+	field(FLNK, "PMX:SDC$(id_num_sdc)_VTH:VMON")
+}
+record(subArray, "PMX:SDC$(id_num_sdc)_VTH:VMON")
+{
+	field(SCAN, "Passive")
+	field(INP,  "PMX:SDC$(id_num_sdc)_VTH:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "PMX:SDC$(id_num_sdc)_VTH:IMON")
+}
+record(subArray, "PMX:SDC$(id_num_sdc)_VTH:IMON")
+{
+	field(SCAN, "Passive")
+	field(INP,  "PMX:SDC$(id_num_sdc)_VTH:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}

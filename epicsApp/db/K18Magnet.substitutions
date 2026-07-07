@@ -1,0 +1,117 @@
+# K18Magnet substitutions file
+# ch   :  form 1 to 200   (if 0, -999.99 is read out.) 
+
+file "db/K18Magnet.template" {
+# Q1
+    { name = K18:Q1:CSET,   ch = 4 }
+    { name = K18:Q1:CMON,   ch = 5 }
+    { name = K18:Q1:POL,    ch = 6 }
+# Q2
+    { name = K18:Q2:CSET,   ch = 7 }
+    { name = K18:Q2:CMON,   ch = 8 }
+    { name = K18:Q2:POL,    ch = 9 }
+# D2
+    { name = K18:D2:CSET,   ch = 10 }
+    { name = K18:D2:CMON,   ch = 11 }
+    { name = K18:D2:POL,    ch = 12 }
+# Q3
+    { name = K18:Q3:CSET,   ch = 13 }
+    { name = K18:Q3:CMON,   ch = 14 }
+    { name = K18:Q3:POL,    ch = 15 }
+# O1
+    { name = K18:O1:CSET,   ch = 16 }
+    { name = K18:O1:CMON,   ch = 17 }
+    { name = K18:O1:POL,    ch = 18 }
+# Q4
+    { name = K18:Q4:CSET,   ch = 19 }
+    { name = K18:Q4:CMON,   ch = 20 }
+    { name = K18:Q4:POL,    ch = 21 }
+# S1
+    { name = K18:S1:CSET,   ch = 22 }
+    { name = K18:S1:CMON,   ch = 23 }
+    { name = K18:S1:POL,    ch = 24 }
+# CM1
+    { name = K18:CM1:CSET,   ch = 25 }
+    { name = K18:CM1:CMON,   ch = 26 }
+    { name = K18:CM1:POL,    ch = 27 }
+# CM2
+    { name = K18:CM2:CSET,   ch = 28 }
+    { name = K18:CM2:CMON,   ch = 29 }
+    { name = K18:CM2:POL,    ch = 30 }
+# S2
+    { name = K18:S2:CSET,   ch = 31 }
+    { name = K18:S2:CMON,   ch = 32 }
+    { name = K18:S2:POL,    ch = 33 }
+# Q5
+    { name = K18:Q5:CSET,   ch = 34 }
+    { name = K18:Q5:CMON,   ch = 35 }
+    { name = K18:Q5:POL,    ch = 36 }
+# Q6
+    { name = K18:Q6:CSET,   ch = 37 }
+    { name = K18:Q6:CMON,   ch = 38 }
+    { name = K18:Q6:POL,    ch = 39 }
+# D3
+    { name = K18:D3:CSET,   ch = 40 }
+    { name = K18:D3:CMON,   ch = 41 }
+    { name = K18:D3:POL,    ch = 42 }
+# Q7
+    { name = K18:Q7:CSET,   ch = 43 }
+    { name = K18:Q7:CMON,   ch = 44 }
+    { name = K18:Q7:POL,    ch = 45 }
+# O2
+    { name = K18:O2:CSET,   ch = 46 }
+    { name = K18:O2:CMON,   ch = 47 }
+    { name = K18:O2:POL,    ch = 48 }
+# S3
+    { name = K18:S3:CSET,   ch = 49 }
+    { name = K18:S3:CMON,   ch = 50 }
+    { name = K18:S3:POL,    ch = 51 }
+# CM3
+    { name = K18:CM3:CSET,   ch = 52 }
+    { name = K18:CM3:CMON,   ch = 53 }
+    { name = K18:CM3:POL,    ch = 54 }
+# CM4
+    { name = K18:CM4:CSET,   ch = 55 }
+    { name = K18:CM4:CMON,   ch = 56 }
+    { name = K18:CM4:POL,    ch = 57 }
+# S4
+    { name = K18:S4:CSET,   ch = 58 }
+    { name = K18:S4:CMON,   ch = 59 }
+    { name = K18:S4:POL,    ch = 60 }
+# Q8
+    { name = K18:Q8:CSET,   ch = 61 }
+    { name = K18:Q8:CMON,   ch = 62 }
+    { name = K18:Q8:POL,    ch = 63 }
+# O3
+    { name = K18:O3:CSET,   ch = 64 }
+    { name = K18:O3:CMON,   ch = 65 }
+    { name = K18:O3:POL,    ch = 66 }
+# Q9
+    { name = K18:Q9:CSET,   ch = 67 }
+    { name = K18:Q9:CMON,   ch = 68 }
+    { name = K18:Q9:POL,    ch = 69 }
+# Q10
+    { name = K18:Q10:CSET,   ch = 70 }
+    { name = K18:Q10:CMON,   ch = 71 }
+    { name = K18:Q10:POL,    ch = 72 }
+# Q11
+    { name = K18:Q11:CSET,   ch = 73 }
+    { name = K18:Q11:CMON,   ch = 74 }
+    { name = K18:Q11:POL,    ch = 75 }
+# D4
+    { name = K18:D4:CSET,   ch = 76 }
+    { name = K18:D4:CMON,   ch = 77 }
+    { name = K18:D4:POL,    ch = 78 }
+# D4s
+    { name = K18:D4s:CSET,   ch = 79 }
+    { name = K18:D4s:CMON,   ch = 80 }
+    { name = K18:D4s:POL,    ch = 81 }
+# Q12
+    { name = K18:Q12:CSET,   ch = 82 }
+    { name = K18:Q12:CMON,   ch = 83 }
+    { name = K18:Q12:POL,    ch = 84 }
+# Q13
+    { name = K18:Q13:CSET,   ch = 85 }
+    { name = K18:Q13:CMON,   ch = 86 }
+    { name = K18:Q13:POL,    ch = 87 }
+}

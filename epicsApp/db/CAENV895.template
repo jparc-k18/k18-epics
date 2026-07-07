@@ -1,0 +1,17 @@
+record(waveform, "CAENV895:$(host)")
+{
+        field(DESC, "CAENV895 $(host)")
+	field(FTVL, "FLOAT")
+        field(NELM, "100")
+	field(SCAN, "20 second")
+	field(PHAS, "0")
+	field(DTYP, "CAENV895Sup")
+}
+record(ai, "CAENV895:$(name):CH$(ch)")
+{
+	field(SCAN, "20 second")
+	field(INP, "CAENV895:$(host)")
+	field(DTYP, "AiZRRX40Sup")
+	field(PHAS, "1")
+	field(DESC, "ZRRX40@$(ch)")
+}

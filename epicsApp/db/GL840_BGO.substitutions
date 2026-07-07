@@ -1,0 +1,25 @@
+# GL840_BGO substitutions file
+# ch   :  form 1 to 20
+
+file "db/GL840_BGO.template" {
+   { name=BGO:CH1,  ch=1,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH2,  ch=2,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH3,  ch=3,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH4,  ch=4,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH5,  ch=5,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH6,  ch=6,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH7,  ch=7,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH8,  ch=8,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH9,  ch=9,  ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH10, ch=10, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH11, ch=11, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH12, ch=12, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH13, ch=13, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH14, ch=14, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH15, ch=15, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH16, ch=16, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH17, ch=17, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH18, ch=18, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH19, ch=19, ASLO=1, ESLO=0.005, EOFF=0 }
+   { name=BGO:CH20, ch=20, ASLO=1, ESLO=0.005, EOFF=0 }
+}

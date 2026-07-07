@@ -1,0 +1,19 @@
+record(waveform, "HTTP:ALine:DATA")
+{
+        field(DESC, "ALine Magnet Status")
+	field(FTVL, "FLOAT")
+        field(NELM, "200")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "HTTP_aline_Sup")
+}
+
+record(ai, "$(name)")
+{
+	field(SCAN, "10 second")
+	field(INP,  "HTTP:ALine:DATA")
+	field(DTYP, "AiHTTPSup")
+	field(PHAS, "1")
+	field(PREC, "4")
+	field(DESC, "HTTP@$(ch)")
+}

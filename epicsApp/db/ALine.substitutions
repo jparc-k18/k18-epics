@@ -1,0 +1,17 @@
+# ALine substitutions file
+# ch   :  form 1 to 200   (if 0, -999.99 is read out.) 
+
+file "db/ALine.template" {
+# K1.8D1
+     { name = ALine:K18D1:CSET,   ch = 109 }
+     { name = ALine:K18D1:CMON,   ch = 110 }
+     { name = ALine:K18D1:POL,    ch = 111 }
+# K1.1D1
+     { name = ALine:K11D1:CSET,   ch = 112 }
+     { name = ALine:K11D1:CMON,   ch = 113 }
+     { name = ALine:K11D1:POL,    ch = 114 }
+# H18
+     { name = ALine:H18:CSET,     ch = 118 }
+     { name = ALine:H18:CMON,     ch = 119 }
+     { name = ALine:H18:POL,      ch = 120 }
+}

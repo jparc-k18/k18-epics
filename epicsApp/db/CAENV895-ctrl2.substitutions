@@ -1,0 +1,37 @@
+# CAENV895 substitutions file
+# ch   :  form 1 to 16
+
+file "db/CAENV895.template" {
+   { name=CTRL2, ch=1 }
+   { name=CTRL2, ch=2 }
+   { name=CTRL2, ch=3 }
+   { name=CTRL2, ch=4 }
+   { name=CTRL2, ch=5 }
+   { name=CTRL2, ch=6 }
+   { name=CTRL2, ch=7 }
+   { name=CTRL2, ch=8 }
+   { name=CTRL2, ch=9 }
+   { name=CTRL2, ch=10 }
+   { name=CTRL2, ch=11 }
+   { name=CTRL2, ch=12 }
+   { name=CTRL2, ch=13 }
+   { name=CTRL2, ch=14 }
+   { name=CTRL2, ch=15 }
+   { name=CTRL2, ch=16 }
+   { name=CTRL2, ch=17 }
+   { name=CTRL2, ch=18 }
+   { name=CTRL2, ch=19 }
+   { name=CTRL2, ch=20 }
+   { name=CTRL2, ch=21 }
+   { name=CTRL2, ch=22 }
+   { name=CTRL2, ch=23 }
+   { name=CTRL2, ch=24 }
+   { name=CTRL2, ch=25 }
+   { name=CTRL2, ch=26 }
+   { name=CTRL2, ch=27 }
+   { name=CTRL2, ch=28 }
+   { name=CTRL2, ch=29 }
+   { name=CTRL2, ch=30 }
+   { name=CTRL2, ch=31 }
+   { name=CTRL2, ch=32 }
+}

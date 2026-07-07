@@ -1,0 +1,9 @@
+# HDDAQ substitutions file
+# ch   :  form 1 to 4
+
+file "db/HDDAQ.template" {
+   { ch=1, name=HDDAQ:RUN_NUMBER }
+   { ch=2, name=HDDAQ:EVENT_NUMBER }
+   { ch=3, name=HDDAQ:UNIX_TIME }
+   { ch=4, name=HDDAQ:SPILL_TIME }
+}

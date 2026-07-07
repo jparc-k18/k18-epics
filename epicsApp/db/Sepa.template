@@ -1,0 +1,19 @@
+record(waveform, "HTTP:Sepa:DATA")
+{
+        field(DESC, "K1.8 Separator Status")
+	field(FTVL, "FLOAT")
+        field(NELM, "100")
+	field(SCAN, "5 second")
+	field(PHAS, "0")
+	field(DTYP, "HTTP_sepa_Sup")
+}
+
+record(ai, "$(name)")
+{
+	field(SCAN, "10 second")
+	field(INP,  "HTTP:Sepa:DATA")
+	field(DTYP, "AiHTTPSup")
+	field(PHAS, "1")
+	field(PREC, "4")
+	field(DESC, "HTTP@$(ch)")
+}

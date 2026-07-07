@@ -1,0 +1,33 @@
+record(waveform, "HULSCL:DATA")
+{
+	field(DESC, "HulScaler $(host) $(port)")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "1 second")
+	field(PHAS, "0")
+	field(DTYP, "HulScalerSup")
+	field(FLNK, "HUL:CLOCK")
+}
+
+record(subArray, "HUL:CLOCK")
+{
+	field(SCAN, "Passive")
+	field(INP,  "HULSCL:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "TPC:SPARK")
+}
+
+record(subArray, "TPC:SPARK")
+{
+	field(SCAN, "Passive")
+	field(INP,  "HULSCL:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}

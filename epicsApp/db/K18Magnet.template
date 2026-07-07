@@ -1,0 +1,19 @@
+record(waveform, "HTTP:K18Magnet:DATA")
+{
+        field(DESC, "K18 Magnet Status")
+	field(FTVL, "FLOAT")
+        field(NELM, "200")
+	field(SCAN, "1 second")
+	field(PHAS, "0")
+	field(DTYP, "HTTP_k18magnet_Sup")
+}
+
+record(ai, "$(name)")
+{
+	field(SCAN, "1 second")
+	field(INP,  "HTTP:K18Magnet:DATA")
+	field(DTYP, "AiHTTPSup")
+	field(PHAS, "1")
+	field(PREC, "4")
+	field(DESC, "HTTP@$(ch)")
+}

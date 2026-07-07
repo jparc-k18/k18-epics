@@ -1,0 +1,8 @@
+record(ai, "GAS:$(det_name):$(data_type)")
+{
+        field(DESC, "GAS $(det_name) $(data_type)")
+	field(SCAN, "Passive")
+	field(PHAS, "0")
+	field(PREC, "1")
+	field(DTYP, "GASSup")
+}

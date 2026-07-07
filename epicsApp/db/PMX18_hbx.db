@@ -1,0 +1,32 @@
+# pmx18 for lso
+record(waveform, "PMX:LSO$(id_num_lso):DATA")
+{
+	field(DESC, "IP:$(ip)")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "PMX18Sup")
+	field(FLNK, "PMX:LSO$(id_num_lso):VMON")
+}
+record(subArray, "PMX:LSO$(id_num_lso):VMON")
+{
+	field(SCAN, "Passive")
+	field(INP,  "PMX:LSO$(id_num_lso):DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "PMX:LSO$(id_num_lso):IMON")
+}
+record(subArray, "PMX:LSO$(id_num_lso):IMON")
+{
+	field(SCAN, "Passive")
+	field(INP,  "PMX:LSO$(id_num_lso):DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}

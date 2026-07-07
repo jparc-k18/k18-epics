@@ -1,0 +1,7 @@
+# TR72NW substitutions file
+# ch   :  form 1 to 2
+
+file "db/TR72NW.template" {
+   { name=AIR:TPC:TEMP, ch=1, ESLO=0.1, EOFF=0 }
+   { name=AIR:TPC:HUMI, ch=2, ESLO=0.1, EOFF=0 }
+}

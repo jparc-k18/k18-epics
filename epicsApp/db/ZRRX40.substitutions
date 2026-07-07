@@ -1,0 +1,15 @@
+# ZRRX40 substitutions file
+# ch   :  form 1 to 20
+
+file "db/ZRRX40.template" {
+   { name=SLIT:IFH:LEFT,    ch=1,  ASLO=0.0005, ESLO=35.0000, EOFF=-147.7280 }
+   { name=SLIT:IFH:RIGHT,   ch=2,  ASLO=0.0005, ESLO=34.9865, EOFF=-27.7529 }
+   { name=SLIT:IFV:UPPER,   ch=3,  ASLO=0.0005, ESLO=9.9545, EOFF=-14.9513 }
+   { name=SLIT:IFV:LOWER,   ch=4,  ASLO=0.0005, ESLO=9.9618, EOFF=-34.9052 }
+   { name=SLIT:MOM:LEFT,    ch=5,  ASLO=0.0005, ESLO=35.9202, EOFF=-179.8373 }
+   { name=SLIT:MOM:RIGHT,   ch=6,  ASLO=0.0005, ESLO=35.9202, EOFF=-179.9813 }
+   { name=SLIT:MASS1:UPPER, ch=7,  ASLO=0.0005, ESLO=5.9987, EOFF=-14.9899 }
+   { name=SLIT:MASS1:LOWER, ch=8,  ASLO=0.0005, ESLO=5.9983, EOFF=-14.9979 }
+   { name=SLIT:MASS2:UPPER, ch=9,  ASLO=0.0005, ESLO=2.1097, EOFF=-10.3952 }
+   { name=SLIT:MASS2:LOWER, ch=10, ASLO=0.0005, ESLO=2.1268, EOFF=-10.7009 }
+}

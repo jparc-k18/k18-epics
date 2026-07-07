@@ -1,0 +1,22 @@
+# Sepalator substitutions file
+# ch   :  form 1 to 100   (if 0, -999.99 is read out.)
+
+file "db/Sepa.template" {
+# K1.8ESS1
+     { name = ESS1:POS:VSET,      ch =  1 }
+     { name = ESS1:POS:VMON,      ch =  2 }
+     { name = ESS1:POS:IMON,      ch =  3 }
+     { name = ESS1:NEG:VSET,      ch =  4 }
+     { name = ESS1:NEG:VMON,      ch =  5 }
+     { name = ESS1:NEG:IMON,      ch =  6 }
+# K1.8ESS2
+     { name = ESS2:POS:VSET,      ch =  7 }
+     { name = ESS2:POS:VMON,      ch =  8 }
+     { name = ESS2:POS:IMON,      ch =  9 }
+     { name = ESS2:NEG:VSET,      ch = 10 }
+     { name = ESS2:NEG:VMON,      ch = 11 }
+     { name = ESS2:NEG:IMON,      ch = 12 }
+# Vacuum status
+     { name = ESS1:CCG,           ch = 13 }
+     { name = ESS2:CCG,           ch = 14 }
+}

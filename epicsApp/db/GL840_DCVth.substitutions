@@ -1,0 +1,25 @@
+# GL840_DCVth substitutions file
+# ch   :  form 1 to 20
+
+file "db/GL840_DCVth.template" {
+   { name=KURAMA:CUR,  ch=1,  ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH2,  ch=2,  ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH3,  ch=3,  ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH4,  ch=4,  ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH5,  ch=5,  ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH6,  ch=6,  ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH7,  ch=7,  ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH8,  ch=8,  ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH9,  ch=9,  ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH10, ch=10, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH11, ch=11, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH12, ch=12, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH13, ch=13, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH14, ch=14, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH15, ch=15, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH16, ch=16, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH17, ch=17, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH18, ch=18, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH19, ch=19, ASLO=1, ESLO=1e-5, EOFF=0 }
+   { name=DCTH:CH20, ch=20, ASLO=1, ESLO=1e-5, EOFF=0 }
+}

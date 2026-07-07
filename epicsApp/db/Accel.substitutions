@@ -1,0 +1,18 @@
+# Accelerator substitutions file
+# ch   :  form 1 to 100   (if 0, -999.99 is read out.)
+
+file "db/Accel.template" {
+     { name = ACC:RUN_NUMBER,                ch =  2 }
+     { name = ACC:SHOT_NUMBER,               ch =  3 }
+     { name = ACC:LAST_SHOT_TIME,            ch =  4 }
+     { name = ACC:MR:POWER,                  ch =  5 }
+     { name = ACC:MR:INTENSITY,              ch =  6 }
+     { name = ACC:MR:OPERATION_CYCLE,        ch =  7 }
+     { name = ACC:SX:DUTY,                   ch =  8 }
+     { name = ACC:SX:SPILL_LENGTH,           ch =  9 }
+     { name = ACC:SX:EXTRACTION_EFFICIENCY,  ch = 10 }
+     { name = ACC:HD:MODE,                   ch = 12 }
+     { name = ACC:HD:POWER,                  ch = 14 }
+     { name = ACC:HD:INTENSITY,              ch = 15 }
+     { name = ACC:HD:BINTENSITY,             ch = 16 }
+}

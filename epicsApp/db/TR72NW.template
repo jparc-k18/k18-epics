@@ -1,0 +1,21 @@
+record(waveform, "TR72NW:DATA")
+{
+        field(DESC, "TR72NW Data")
+	field(FTVL, "FLOAT")
+        field(NELM, "2")
+	field(SCAN, "20 second")
+	field(PHAS, "0")
+	field(DTYP, "TR72NWSup")
+}
+record(ai, "$(name)")
+{
+	field(SCAN, "20 second")
+	field(INP, "TR72NW:DATA")
+	field(DTYP, "AiTR72NWSup")
+	field(PHAS, "1")
+	field(PREC, "1")
+	field(LINR, "LINEAR")
+	field(ESLO, "$(ESLO)")
+	field(EOFF, "$(EOFF)")
+	field(DESC, "TR72NW@$(ch)")
+}

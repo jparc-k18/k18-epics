@@ -1,0 +1,104 @@
+#WC up and down
+record(waveform, "TR72NW_socket1:DATA")
+{
+	field(DESC, "IP|192.168.30.36|SN|0xA9,0x6B,0x18,0x52")
+#	field(DESC, "SN|0xA9,0x6B,0x18,0x52")
+#	field(DESC, "TR72NW_socket_dummy raw data")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "TR72NW_socketSup_dummy")
+	field(FLNK, "AIR:WCU:TEMP_dummy")
+}
+record(subArray, "AIR:WCU:TEMP_dummy")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket1:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "AIR:WCU:HUMI_dummy")
+}
+record(subArray, "AIR:WCU:HUMI_dummy")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR72NW_socket1:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}
+
+# record(waveform, "TR72NW_socket1:DATA")
+# {
+# 	field(DESC, "TR72NW_socket raw data")
+# 	field(FTVL, "FLOAT")
+# 	field(NELM, "2")
+# 	field(SCAN, "10 second")
+# 	field(PHAS, "0")
+# 	field(DTYP, "TR72NW_socketSup")
+# #	field(DESC, "HTTP@192.168.30.38")
+# #	field(DESC, "SerialNumber: 0xA9 0x6B 0x18 0x52")
+# #	field(DESC, "SerialNumber: 0x53 0x14 0x18 0x52")
+# #	field(DESC, "HTTP@192.168.30.38 SerialNumber: 0xA9 0x6B 0x18 0x52")
+# 	field(DESC, "HTTP@192.168.30.38 SerialNumber: 0x53 0x14 0x18 0x52")
+# 	field(FLNK, "AIR:WCdown:TEMP")
+# }
+# record(subArray, "AIR:WCdown:TEMP")
+# {
+# 	field(SCAN, "Passive")
+# 	field(INP,  "TR72NW_socket1:DATA")
+# 	field(FTVL, "FLOAT")
+# 	field(MALM, "2")
+# 	field(NELM, "1")
+# 	field(PREC, "1")
+# 	field(INDX, "0")
+# 	field(FLNK, "AIR:WCdown:HUMI")
+# }
+# record(subArray, "AIR:WCdown:HUMI")
+# {
+# 	field(SCAN, "Passive")
+# 	field(INP,  "TR72NW_socket1:DATA")
+# 	field(FTVL, "FLOAT")
+# 	field(MALM, "2")
+# 	field(NELM, "1")
+# 	field(PREC, "1")
+# 	field(INDX, "1")
+# }
+
+# record(waveform, "TR72NW_socket1:DATA")
+# {
+# 	field(DESC, "TR72NW_socket raw data")
+# 	field(FTVL, "FLOAT")
+# 	field(NELM, "2")
+# 	field(SCAN, "10 second")
+# 	field(PHAS, "0")
+# 	field(DTYP, "TR72NW_socketSup")
+# 	field(DESC, "HTTP@192.168.30.38")
+# 	field(FLNK, "AIR:TRG_RACK:TEMP")
+# }
+# record(subArray, "AIR:TRG_RACK:TEMP")
+# {
+# 	field(SCAN, "Passive")
+# 	field(INP,  "TR72NW_socket1:DATA")
+# 	field(FTVL, "FLOAT")
+# 	field(MALM, "2")
+# 	field(NELM, "1")
+# 	field(PREC, "1")
+# 	field(INDX, "0")
+# 	field(FLNK, "AIR:TRG_RACK:HUMI")
+# }
+# record(subArray, "AIR:TRG_RACK:HUMI")
+# {
+# 	field(SCAN, "Passive")
+# 	field(INP,  "TR72NW_socket1:DATA")
+# 	field(FTVL, "FLOAT")
+# 	field(MALM, "2")
+# 	field(NELM, "1")
+# 	field(PREC, "1")
+# 	field(INDX, "1")
+# }

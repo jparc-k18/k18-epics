@@ -1,0 +1,51 @@
+# record(ai, "GAS:$(det_name):$(data_type)")
+# {
+#         field(DESC, "GAS $(det_name) $(data_type)")
+# 	field(SCAN, "Passive")
+# 	field(PHAS, "0")
+# 	field(PREC, "1")
+# 	field(DTYP, "GASSup")
+# }
+
+record(waveform, "GAS:SDC:DATA")
+{
+	field(DESC, "SDC dif pressure")
+	field(FTVL, "FLOAT")
+	field(NELM, "3")
+	field(SCAN, "5 second")
+	field(PHAS, "0")
+	field(DTYP, "PresSDC_Sup")
+	field(FLNK, "GAS:SDC3:DIFP")
+}
+record(subArray, "GAS:SDC3:DIFP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "GAS:SDC:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "3")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "GAS:SDC4:DIFP")
+}
+record(subArray, "GAS:SDC4:DIFP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "GAS:SDC:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "3")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+	field(FLNK, "GAS:SDC5:DIFP")
+}
+record(subArray, "GAS:SDC5:DIFP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "GAS:SDC:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "3")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "2")
+}

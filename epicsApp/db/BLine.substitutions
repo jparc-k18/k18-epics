@@ -1,0 +1,9 @@
+# BLine substitutions file
+# ch   :  form 1 to 200   (if 0, -999.99 is read out.)
+
+file "db/BLine.template" {
+# SM1
+     { name = BLine:SM1:CSET,   ch = 1 }
+     { name = BLine:SM1:CMON,   ch = 2 }
+     { name = BLine:SM1:POL,    ch = 3 }
+}

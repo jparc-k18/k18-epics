@@ -1,0 +1,149 @@
+file "db/CAENHV_A.template" {
+   {crate=3, slot=11, BoardType=SY1527, IP=192.168.30.12, ChMax=24}
+}
+file "db/CAENHV_B.template" {
+   {crate=3, slot=11, name=CH0:V0Set, ch=1}
+   {crate=3, slot=11, name=CH0:I0Set, ch=2}
+   {crate=3, slot=11, name=CH0:VMon,  ch=3}
+   {crate=3, slot=11, name=CH0:IMon,  ch=4}
+   {crate=3, slot=11, name=CH0:Pw,    ch=5}
+
+   {crate=3, slot=11, name=CH1:V0Set, ch=6}
+   {crate=3, slot=11, name=CH1:I0Set, ch=7}
+   {crate=3, slot=11, name=CH1:VMon,  ch=8}
+   {crate=3, slot=11, name=CH1:IMon,  ch=9}
+   {crate=3, slot=11, name=CH1:Pw,    ch=10}
+
+   {crate=3, slot=11, name=CH2:V0Set, ch=11}
+   {crate=3, slot=11, name=CH2:I0Set, ch=12}
+   {crate=3, slot=11, name=CH2:VMon,  ch=13}
+   {crate=3, slot=11, name=CH2:IMon,  ch=14}
+   {crate=3, slot=11, name=CH2:Pw,    ch=15}
+
+   {crate=3, slot=11, name=CH3:V0Set, ch=16}
+   {crate=3, slot=11, name=CH3:I0Set, ch=17}
+   {crate=3, slot=11, name=CH3:VMon,  ch=18}
+   {crate=3, slot=11, name=CH3:IMon,  ch=19}
+   {crate=3, slot=11, name=CH3:Pw,    ch=20}
+
+   {crate=3, slot=11, name=CH4:V0Set, ch=21}
+   {crate=3, slot=11, name=CH4:I0Set, ch=22}
+   {crate=3, slot=11, name=CH4:VMon,  ch=23}
+   {crate=3, slot=11, name=CH4:IMon,  ch=24}
+   {crate=3, slot=11, name=CH4:Pw,    ch=25}
+
+   {crate=3, slot=11, name=CH5:V0Set, ch=26}
+   {crate=3, slot=11, name=CH5:I0Set, ch=27}
+   {crate=3, slot=11, name=CH5:VMon,  ch=28}
+   {crate=3, slot=11, name=CH5:IMon,  ch=29}
+   {crate=3, slot=11, name=CH5:Pw,    ch=30}
+
+   {crate=3, slot=11, name=CH6:V0Set, ch=31}
+   {crate=3, slot=11, name=CH6:I0Set, ch=32}
+   {crate=3, slot=11, name=CH6:VMon,  ch=33}
+   {crate=3, slot=11, name=CH6:IMon,  ch=34}
+   {crate=3, slot=11, name=CH6:Pw,    ch=35}
+
+   {crate=3, slot=11, name=CH7:V0Set, ch=36}
+   {crate=3, slot=11, name=CH7:I0Set, ch=37}
+   {crate=3, slot=11, name=CH7:VMon,  ch=38}
+   {crate=3, slot=11, name=CH7:IMon,  ch=39}
+   {crate=3, slot=11, name=CH7:Pw,    ch=40}
+
+   {crate=3, slot=11, name=CH8:V0Set, ch=41}
+   {crate=3, slot=11, name=CH8:I0Set, ch=42}
+   {crate=3, slot=11, name=CH8:VMon,  ch=43}
+   {crate=3, slot=11, name=CH8:IMon,  ch=44}
+   {crate=3, slot=11, name=CH8:Pw,    ch=45}
+
+   {crate=3, slot=11, name=CH9:V0Set, ch=46}
+   {crate=3, slot=11, name=CH9:I0Set, ch=47}
+   {crate=3, slot=11, name=CH9:VMon,  ch=48}
+   {crate=3, slot=11, name=CH9:IMon,  ch=49}
+   {crate=3, slot=11, name=CH9:Pw,    ch=50}
+
+   {crate=3, slot=11, name=CH10:V0Set, ch=51}
+   {crate=3, slot=11, name=CH10:I0Set, ch=52}
+   {crate=3, slot=11, name=CH10:VMon,  ch=53}
+   {crate=3, slot=11, name=CH10:IMon,  ch=54}
+   {crate=3, slot=11, name=CH10:Pw,    ch=55}
+
+   {crate=3, slot=11, name=CH11:V0Set, ch=56}
+   {crate=3, slot=11, name=CH11:I0Set, ch=57}
+   {crate=3, slot=11, name=CH11:VMon,  ch=58}
+   {crate=3, slot=11, name=CH11:IMon,  ch=59}
+   {crate=3, slot=11, name=CH11:Pw,    ch=60}
+
+   {crate=3, slot=11, name=CH12:V0Set, ch=61}
+   {crate=3, slot=11, name=CH12:I0Set, ch=62}
+   {crate=3, slot=11, name=CH12:VMon,  ch=63}
+   {crate=3, slot=11, name=CH12:IMon,  ch=64}
+   {crate=3, slot=11, name=CH12:Pw,    ch=65}
+
+   {crate=3, slot=11, name=CH13:V0Set, ch=66}
+   {crate=3, slot=11, name=CH13:I0Set, ch=67}
+   {crate=3, slot=11, name=CH13:VMon,  ch=68}
+   {crate=3, slot=11, name=CH13:IMon,  ch=69}
+   {crate=3, slot=11, name=CH13:Pw,    ch=70}
+
+   {crate=3, slot=11, name=CH14:V0Set, ch=71}
+   {crate=3, slot=11, name=CH14:I0Set, ch=72}
+   {crate=3, slot=11, name=CH14:VMon,  ch=73}
+   {crate=3, slot=11, name=CH14:IMon,  ch=74}
+   {crate=3, slot=11, name=CH14:Pw,    ch=75}
+
+   {crate=3, slot=11, name=CH15:V0Set, ch=76}
+   {crate=3, slot=11, name=CH15:I0Set, ch=77}
+   {crate=3, slot=11, name=CH15:VMon,  ch=78}
+   {crate=3, slot=11, name=CH15:IMon,  ch=79}
+   {crate=3, slot=11, name=CH15:Pw,    ch=80}
+
+   {crate=3, slot=11, name=CH16:V0Set, ch=81}
+   {crate=3, slot=11, name=CH16:I0Set, ch=82}
+   {crate=3, slot=11, name=CH16:VMon,  ch=83}
+   {crate=3, slot=11, name=CH16:IMon,  ch=84}
+   {crate=3, slot=11, name=CH16:Pw,    ch=85}
+
+   {crate=3, slot=11, name=CH17:V0Set, ch=86}
+   {crate=3, slot=11, name=CH17:I0Set, ch=87}
+   {crate=3, slot=11, name=CH17:VMon,  ch=88}
+   {crate=3, slot=11, name=CH17:IMon,  ch=89}
+   {crate=3, slot=11, name=CH17:Pw,    ch=90}
+
+   {crate=3, slot=11, name=CH18:V0Set, ch=91}
+   {crate=3, slot=11, name=CH18:I0Set, ch=92}
+   {crate=3, slot=11, name=CH18:VMon,  ch=93}
+   {crate=3, slot=11, name=CH18:IMon,  ch=94}
+   {crate=3, slot=11, name=CH18:Pw,    ch=95}
+
+   {crate=3, slot=11, name=CH19:V0Set, ch=96}
+   {crate=3, slot=11, name=CH19:I0Set, ch=97}
+   {crate=3, slot=11, name=CH19:VMon,  ch=98}
+   {crate=3, slot=11, name=CH19:IMon,  ch=99}
+   {crate=3, slot=11, name=CH19:Pw,    ch=100}
+
+   {crate=3, slot=11, name=CH20:V0Set, ch=101}
+   {crate=3, slot=11, name=CH20:I0Set, ch=102}
+   {crate=3, slot=11, name=CH20:VMon,  ch=103}
+   {crate=3, slot=11, name=CH20:IMon,  ch=104}
+   {crate=3, slot=11, name=CH20:Pw,    ch=105}
+
+   {crate=3, slot=11, name=CH21:V0Set, ch=106}
+   {crate=3, slot=11, name=CH21:I0Set, ch=107}
+   {crate=3, slot=11, name=CH21:VMon,  ch=108}
+   {crate=3, slot=11, name=CH21:IMon,  ch=109}
+   {crate=3, slot=11, name=CH21:Pw,    ch=110}
+
+   {crate=3, slot=11, name=CH22:V0Set, ch=111}
+   {crate=3, slot=11, name=CH22:I0Set, ch=112}
+   {crate=3, slot=11, name=CH22:VMon,  ch=113}
+   {crate=3, slot=11, name=CH22:IMon,  ch=114}
+   {crate=3, slot=11, name=CH22:Pw,    ch=115}
+
+   {crate=3, slot=11, name=CH23:V0Set, ch=116}
+   {crate=3, slot=11, name=CH23:I0Set, ch=117}
+   {crate=3, slot=11, name=CH23:VMon,  ch=118}
+   {crate=3, slot=11, name=CH23:IMon,  ch=119}
+   {crate=3, slot=11, name=CH23:Pw,    ch=120}
+}
+

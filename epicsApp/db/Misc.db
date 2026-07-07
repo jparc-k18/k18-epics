@@ -1,0 +1,8 @@
+record(ai, "$(det_name):$(sub_name)")
+{
+        field(DESC, "$(det_name) $(sub_name)")
+	field(SCAN, "Passive")
+	field(PHAS, "0")
+	field(PREC, "1")
+	field(DTYP, "MiscSup")
+}

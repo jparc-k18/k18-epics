@@ -1,0 +1,9 @@
+record(ai, "HDDAQ:SPILL_TIME")
+{
+        field(DESC, "HDDAQ SpillTime $(host):$(port)")
+	field(SCAN, ".1 second")
+	field(PHAS, "0")
+	field(PREC, "7")
+	field(EGU, "s")
+	field(DTYP, "HDDAQ_SpillTime_Sup")
+}

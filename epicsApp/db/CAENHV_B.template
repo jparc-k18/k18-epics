@@ -1,0 +1,8 @@
+record(ai, "CAENHV:CRATE$(crate):SLOT$(slot):$(name)")
+{
+        field(SCAN, "20 second")
+        field(INP, "CAENHV:CRATE$(crate):SLOT$(slot):DATA")
+        field(DTYP, "AiHTTPSup")
+        field(PHAS, "1")
+        field(DESC, "HTTP@$(ch)")
+}

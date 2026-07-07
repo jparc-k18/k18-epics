@@ -1,0 +1,166 @@
+#BFT tent
+record(waveform, "TR700W1:DATA")
+{
+	field(DESC, "TR700W raw data")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "TR700WSup")
+	field(DESC, "HTTP@192.168.30.31")
+	field(FLNK, "AIR:BFT_TENT:TEMP")
+}
+record(subArray, "AIR:BFT_TENT:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR700W1:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "AIR:BFT_TENT:HUMI")
+}
+record(subArray, "AIR:BFT_TENT:HUMI")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR700W1:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}
+#TRG rack
+record(waveform, "TR700W2:DATA")
+{
+	field(DESC, "TR700W raw data")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "TR700WSup")
+	field(DESC, "HTTP@192.168.30.37")
+	field(FLNK, "AIR:TRG_RACK:TEMP")
+}
+record(subArray, "AIR:TRG_RACK:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR700W2:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "AIR:TRG_RACK:HUMI")
+}
+record(subArray, "AIR:TRG_RACK:HUMI")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR700W2:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}
+#BH2 rack
+record(waveform, "TR700W3:DATA")
+{
+	field(DESC, "TR700W raw data")
+	field(FTVL, "FLOAT")
+	field(NELM, "2")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "TR700WSup")
+	field(DESC, "HTTP@192.168.30.33")
+	field(FLNK, "AIR:BH2_RACK:TEMP")
+}
+record(subArray, "AIR:BH2_RACK:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR700W3:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "AIR:BH2_RACK:HUMI")
+}
+record(subArray, "AIR:BH2_RACK:HUMI")
+{
+	field(SCAN, "Passive")
+	field(INP,  "TR700W3:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "2")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+}
+
+# #KURAMA tent
+# record(waveform, "TR700W3:DATA")
+# {
+# 	field(DESC, "TR700W raw data")
+# 	field(FTVL, "FLOAT")
+# 	field(NELM, "2")
+# 	field(SCAN, "10 second")
+# 	field(PHAS, "0")
+# 	field(DTYP, "TR700WSup")
+# 	field(DESC, "HTTP@192.168.30.34")
+# 	field(FLNK, "AIR:KURAMA_TENT:TEMP")
+# }
+# record(subArray, "AIR:KURAMA_TENT:TEMP")
+# {
+# 	field(SCAN, "Passive")
+# 	field(INP,  "TR700W3:DATA")
+# 	field(FTVL, "FLOAT")
+# 	field(MALM, "2")
+# 	field(NELM, "1")
+# 	field(PREC, "1")
+# 	field(INDX, "0")
+# 	field(FLNK, "AIR:KURAMA_TENT:HUMI")
+# }
+# record(subArray, "AIR:KURAMA_TENT:HUMI")
+# {
+# 	field(SCAN, "Passive")
+# 	field(INP,  "TR700W3:DATA")
+# 	field(FTVL, "FLOAT")
+# 	field(MALM, "2")
+# 	field(NELM, "1")
+# 	field(PREC, "1")
+# 	field(INDX, "1")
+# }
+# #KURAMA SCH
+# record(waveform, "TR700W4:DATA")
+# {
+# 	field(DESC, "TR700W raw data")
+# 	field(FTVL, "FLOAT")
+# 	field(NELM, "2")
+# 	field(SCAN, "10 second")
+# 	field(PHAS, "0")
+# 	field(DTYP, "TR700WSup")
+# 	field(DESC, "HTTP@192.168.30.37")
+# 	field(FLNK, "AIR:SCH:TEMP")
+# }
+# record(subArray, "AIR:SCH:TEMP")
+# {
+# 	field(SCAN, "Passive")
+# 	field(INP,  "TR700W4:DATA")
+# 	field(FTVL, "FLOAT")
+# 	field(MALM, "2")
+# 	field(NELM, "1")
+# 	field(PREC, "1")
+# 	field(INDX, "0")
+# 	field(FLNK, "AIR:SCH:HUMI")
+# }
+# record(subArray, "AIR:SCH:HUMI")
+# {
+# 	field(SCAN, "Passive")
+# 	field(INP,  "TR700W4:DATA")
+# 	field(FTVL, "FLOAT")
+# 	field(MALM, "2")
+# 	field(NELM, "1")
+# 	field(PREC, "1")
+# 	field(INDX, "1")
+# }

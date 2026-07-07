@@ -1,0 +1,15 @@
+# ZRRX45 substitutions file
+# ch   :  form 1 to 20
+
+file "db/ZRRX45.template" {
+   { name=ZRRX45:CH1,    ch=1,  ASLO=1, ESLO=0.1, EOFF=0 }
+   { name=ZRRX45:CH2,    ch=2,  ASLO=1, ESLO=0.1, EOFF=0 }
+   { name=ZRRX45:CH3,    ch=3,  ASLO=1, ESLO=0.1, EOFF=0 }
+   { name=ZRRX45:CH4,    ch=4,  ASLO=1, ESLO=0.1, EOFF=0 }
+   { name=ZRRX45:CH5,    ch=5,  ASLO=1, ESLO=0.1, EOFF=0 }
+   { name=ZRRX45:CH6,    ch=6,  ASLO=1, ESLO=0.1, EOFF=0 }
+   { name=ZRRX45:CH7,    ch=7,  ASLO=1, ESLO=0.1, EOFF=0 }
+   { name=ZRRX45:CH8,    ch=8,  ASLO=1, ESLO=0.1, EOFF=0 }
+   { name=ZRRX45:CH9,    ch=9,  ASLO=1, ESLO=0.1, EOFF=0 }
+   { name=ZRRX45:CH10,   ch=10, ASLO=1, ESLO=0.1, EOFF=0 }
+}

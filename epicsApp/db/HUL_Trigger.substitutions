@@ -1,0 +1,256 @@
+# HUL_Trigger substitutions file
+# ch   :  form 1 to 4
+
+file "db/HUL_Trigger.template" {
+   { ch=1  , name=RGN1::SEL_TOF               }
+   { ch=2  , name=RGN2A::DELAY_BH1_BEAM       }
+   { ch=3  , name=RGN2A::DELAY_BH2_BEAM       }
+   { ch=4  , name=RGN2A::DELAY_BAC_BEAM       }
+   { ch=5  , name=RGN2A::DELAY_HTOF_BEAM      }
+   { ch=6  , name=RGN2A::DELAY_OTHER1_BEAM    }
+   { ch=7  , name=RGN2A::DELAY_OTHER2_BEAM    }
+   { ch=8  , name=RGN2A::WIDTH_BH1_BEAM       }
+   { ch=9  , name=RGN2A::WIDTH_BH2_BEAM       }
+   { ch=10 , name=RGN2A::WIDTH_BAC_BEAM       }
+   { ch=11 , name=RGN2A::WIDTH_HTOF_BEAM      }
+   { ch=12 , name=RGN2A::WIDTH_OTHER1_BEAM    }
+   { ch=13 , name=RGN2A::WIDTH_OTHER2_BEAM    }
+   { ch=14 , name=RGN2A::BPS_CTRL_BEAM        }
+   { ch=15 , name=RGN2A::BPS_COIN_BEAM        }
+   { ch=16 , name=RGN2A::DELAY_BEAM_SCAT      }
+   { ch=17 , name=RGN2A::DELAY_PVAC_SCAT      }
+   { ch=18 , name=RGN2A::DELAY_FAC_SCAT       }
+   { ch=19 , name=RGN2A::DELAY_TOF_SCAT       }
+   { ch=20 , name=RGN2A::DELAY_LAC_SCAT       }
+   { ch=21 , name=RGN2A::DELAY_WC_SCAT        }
+   { ch=22 , name=RGN2A::DELAY_M2D1_SCAT      }
+   { ch=23 , name=RGN2A::DELAY_M2D2_SCAT      }
+   { ch=24 , name=RGN2A::DELAY_M3D_SCAT       }
+   { ch=25 , name=RGN2A::DELAY_OTHER3_SCAT    }
+   { ch=26 , name=RGN2A::DELAY_OTHER4_SCAT    }
+   { ch=27 , name=RGN2A::WIDTH_BEAM_SCAT      }
+   { ch=28 , name=RGN2A::WIDTH_PVAC_SCAT      }
+   { ch=29 , name=RGN2A::WIDTH_FAC_SCAT       }
+   { ch=30 , name=RGN2A::WIDTH_TOF_SCAT       }
+   { ch=31 , name=RGN2A::WIDTH_LAC_SCAT       }
+   { ch=32 , name=RGN2A::WIDTH_WC_SCAT        }
+   { ch=33 , name=RGN2A::WIDTH_M2D1_SCAT      }
+   { ch=34 , name=RGN2A::WIDTH_M2D2_SCAT      }
+   { ch=35 , name=RGN2A::WIDTH_M3D_SCAT       }
+   { ch=36 , name=RGN2A::WIDTH_OTHER3_SCAT    }
+   { ch=37 , name=RGN2A::WIDTH_OTHER4_SCAT    }
+   { ch=38 , name=RGN2A::BPS_CTRL_SCAT        }
+   { ch=39 , name=RGN2A::BPS_COIN_SCAT        }
+   { ch=40 , name=RGN2B::DELAY_BH1_BEAM       }
+   { ch=41 , name=RGN2B::DELAY_BH2_BEAM       }
+   { ch=42 , name=RGN2B::DELAY_BAC_BEAM       }
+   { ch=43 , name=RGN2B::DELAY_HTOF_BEAM      }
+   { ch=44 , name=RGN2B::DELAY_OTHER1_BEAM    }
+   { ch=45 , name=RGN2B::DELAY_OTHER2_BEAM    }
+   { ch=46 , name=RGN2B::WIDTH_BH1_BEAM       }
+   { ch=47 , name=RGN2B::WIDTH_BH2_BEAM       }
+   { ch=48 , name=RGN2B::WIDTH_BAC_BEAM       }
+   { ch=49 , name=RGN2B::WIDTH_HTOF_BEAM      }
+   { ch=50 , name=RGN2B::WIDTH_OTHER1_BEAM    }
+   { ch=51 , name=RGN2B::WIDTH_OTHER2_BEAM    }
+   { ch=52 , name=RGN2B::BPS_CTRL_BEAM        }
+   { ch=53 , name=RGN2B::BPS_COIN_BEAM        }
+   { ch=54 , name=RGN2B::DELAY_BEAM_SCAT      }
+   { ch=55 , name=RGN2B::DELAY_PVAC_SCAT      }
+   { ch=56 , name=RGN2B::DELAY_FAC_SCAT       }
+   { ch=57 , name=RGN2B::DELAY_TOF_SCAT       }
+   { ch=58 , name=RGN2B::DELAY_LAC_SCAT       }
+   { ch=59 , name=RGN2B::DELAY_WC_SCAT        }
+   { ch=60 , name=RGN2B::DELAY_M2D1_SCAT      }
+   { ch=61 , name=RGN2B::DELAY_M2D2_SCAT      }
+   { ch=62 , name=RGN2B::DELAY_M3D_SCAT       }
+   { ch=63 , name=RGN2B::DELAY_OTHER3_SCAT    }
+   { ch=64 , name=RGN2B::DELAY_OTHER4_SCAT    }
+   { ch=65 , name=RGN2B::WIDTH_BEAM_SCAT      }
+   { ch=66 , name=RGN2B::WIDTH_PVAC_SCAT      }
+   { ch=67 , name=RGN2B::WIDTH_FAC_SCAT       }
+   { ch=68 , name=RGN2B::WIDTH_TOF_SCAT       }
+   { ch=69 , name=RGN2B::WIDTH_LAC_SCAT       }
+   { ch=70 , name=RGN2B::WIDTH_WC_SCAT        }
+   { ch=71 , name=RGN2B::WIDTH_M2D1_SCAT      }
+   { ch=72 , name=RGN2B::WIDTH_M2D2_SCAT      }
+   { ch=73 , name=RGN2B::WIDTH_M3D_SCAT       }
+   { ch=74 , name=RGN2B::WIDTH_OTHER3_SCAT    }
+   { ch=75 , name=RGN2B::WIDTH_OTHER4_SCAT    }
+   { ch=76 , name=RGN2B::BPS_CTRL_SCAT        }
+   { ch=77 , name=RGN2B::BPS_COIN_SCAT        }
+   { ch=78 , name=RGN2C::DELAY_BH1_BEAM       }
+   { ch=79 , name=RGN2C::DELAY_BH2_BEAM       }
+   { ch=80 , name=RGN2C::DELAY_BAC_BEAM       }
+   { ch=81 , name=RGN2C::DELAY_HTOF_BEAM      }
+   { ch=82 , name=RGN2C::DELAY_OTHER1_BEAM    }
+   { ch=83 , name=RGN2C::DELAY_OTHER2_BEAM    }
+   { ch=84 , name=RGN2C::WIDTH_BH1_BEAM       }
+   { ch=85 , name=RGN2C::WIDTH_BH2_BEAM       }
+   { ch=86 , name=RGN2C::WIDTH_BAC_BEAM       }
+   { ch=87 , name=RGN2C::WIDTH_HTOF_BEAM      }
+   { ch=88 , name=RGN2C::WIDTH_OTHER1_BEAM    }
+   { ch=89 , name=RGN2C::WIDTH_OTHER2_BEAM    }
+   { ch=90 , name=RGN2C::BPS_CTRL_BEAM        }
+   { ch=91 , name=RGN2C::BPS_COIN_BEAM        }
+   { ch=92 , name=RGN2C::DELAY_BEAM_SCAT      }
+   { ch=93 , name=RGN2C::DELAY_PVAC_SCAT      }
+   { ch=94 , name=RGN2C::DELAY_FAC_SCAT       }
+   { ch=95 , name=RGN2C::DELAY_TOF_SCAT       }
+   { ch=96 , name=RGN2C::DELAY_LAC_SCAT       }
+   { ch=97 , name=RGN2C::DELAY_WC_SCAT        }
+   { ch=98 , name=RGN2C::DELAY_M2D1_SCAT      }
+   { ch=99 , name=RGN2C::DELAY_M2D2_SCAT      }
+   { ch=100, name=RGN2C::DELAY_M3D_SCAT       }
+   { ch=101, name=RGN2C::DELAY_OTHER3_SCAT    }
+   { ch=102, name=RGN2C::DELAY_OTHER4_SCAT    }
+   { ch=103, name=RGN2C::WIDTH_BEAM_SCAT      }
+   { ch=104, name=RGN2C::WIDTH_PVAC_SCAT      }
+   { ch=105, name=RGN2C::WIDTH_FAC_SCAT       }
+   { ch=106, name=RGN2C::WIDTH_TOF_SCAT       }
+   { ch=107, name=RGN2C::WIDTH_LAC_SCAT       }
+   { ch=108, name=RGN2C::WIDTH_WC_SCAT        }
+   { ch=109, name=RGN2C::WIDTH_M2D1_SCAT      }
+   { ch=110, name=RGN2C::WIDTH_M2D2_SCAT      }
+   { ch=111, name=RGN2C::WIDTH_M3D_SCAT       }
+   { ch=112, name=RGN2C::WIDTH_OTHER3_SCAT    }
+   { ch=113, name=RGN2C::WIDTH_OTHER4_SCAT    }
+   { ch=114, name=RGN2C::BPS_CTRL_SCAT        }
+   { ch=115, name=RGN2C::BPS_COIN_SCAT        }
+   { ch=116, name=RGN2D::DELAY_BH1_BEAM       }
+   { ch=117, name=RGN2D::DELAY_BH2_BEAM       }
+   { ch=118, name=RGN2D::DELAY_BAC_BEAM       }
+   { ch=119, name=RGN2D::DELAY_HTOF_BEAM      }
+   { ch=120, name=RGN2D::DELAY_OTHER1_BEAM    }
+   { ch=121, name=RGN2D::DELAY_OTHER2_BEAM    }
+   { ch=122, name=RGN2D::WIDTH_BH1_BEAM       }
+   { ch=123, name=RGN2D::WIDTH_BH2_BEAM       }
+   { ch=124, name=RGN2D::WIDTH_BAC_BEAM       }
+   { ch=125, name=RGN2D::WIDTH_HTOF_BEAM      }
+   { ch=126, name=RGN2D::WIDTH_OTHER1_BEAM    }
+   { ch=127, name=RGN2D::WIDTH_OTHER2_BEAM    }
+   { ch=128, name=RGN2D::BPS_CTRL_BEAM        }
+   { ch=129, name=RGN2D::BPS_COIN_BEAM        }
+   { ch=130, name=RGN2D::DELAY_BEAM_SCAT      }
+   { ch=131, name=RGN2D::DELAY_PVAC_SCAT      }
+   { ch=132, name=RGN2D::DELAY_FAC_SCAT       }
+   { ch=133, name=RGN2D::DELAY_TOF_SCAT       }
+   { ch=134, name=RGN2D::DELAY_LAC_SCAT       }
+   { ch=135, name=RGN2D::DELAY_WC_SCAT        }
+   { ch=136, name=RGN2D::DELAY_M2D1_SCAT      }
+   { ch=137, name=RGN2D::DELAY_M2D2_SCAT      }
+   { ch=138, name=RGN2D::DELAY_M3D_SCAT       }
+   { ch=139, name=RGN2D::DELAY_OTHER3_SCAT    }
+   { ch=140, name=RGN2D::DELAY_OTHER4_SCAT    }
+   { ch=141, name=RGN2D::WIDTH_BEAM_SCAT      }
+   { ch=142, name=RGN2D::WIDTH_PVAC_SCAT      }
+   { ch=143, name=RGN2D::WIDTH_FAC_SCAT       }
+   { ch=144, name=RGN2D::WIDTH_TOF_SCAT       }
+   { ch=145, name=RGN2D::WIDTH_LAC_SCAT       }
+   { ch=146, name=RGN2D::WIDTH_WC_SCAT        }
+   { ch=147, name=RGN2D::WIDTH_M2D1_SCAT      }
+   { ch=148, name=RGN2D::WIDTH_M2D2_SCAT      }
+   { ch=149, name=RGN2D::WIDTH_M3D_SCAT       }
+   { ch=150, name=RGN2D::WIDTH_OTHER3_SCAT    }
+   { ch=151, name=RGN2D::WIDTH_OTHER4_SCAT    }
+   { ch=152, name=RGN2D::BPS_CTRL_SCAT        }
+   { ch=153, name=RGN2D::BPS_COIN_SCAT        }
+   { ch=154, name=RGN2E::DELAY_BH1_BEAM       }
+   { ch=155, name=RGN2E::DELAY_BH2_BEAM       }
+   { ch=156, name=RGN2E::DELAY_BAC_BEAM       }
+   { ch=157, name=RGN2E::DELAY_HTOF_BEAM      }
+   { ch=158, name=RGN2E::DELAY_OTHER1_BEAM    }
+   { ch=159, name=RGN2E::DELAY_OTHER2_BEAM    }
+   { ch=160, name=RGN2E::WIDTH_BH1_BEAM       }
+   { ch=161, name=RGN2E::WIDTH_BH2_BEAM       }
+   { ch=162, name=RGN2E::WIDTH_BAC_BEAM       }
+   { ch=163, name=RGN2E::WIDTH_HTOF_BEAM      }
+   { ch=164, name=RGN2E::WIDTH_OTHER1_BEAM    }
+   { ch=165, name=RGN2E::WIDTH_OTHER2_BEAM    }
+   { ch=166, name=RGN2E::BPS_CTRL_BEAM        }
+   { ch=167, name=RGN2E::BPS_COIN_BEAM        }
+   { ch=168, name=RGN2E::DELAY_BEAM_SCAT      }
+   { ch=169, name=RGN2E::DELAY_PVAC_SCAT      }
+   { ch=170, name=RGN2E::DELAY_FAC_SCAT       }
+   { ch=171, name=RGN2E::DELAY_TOF_SCAT       }
+   { ch=172, name=RGN2E::DELAY_LAC_SCAT       }
+   { ch=173, name=RGN2E::DELAY_WC_SCAT        }
+   { ch=174, name=RGN2E::DELAY_M2D1_SCAT      }
+   { ch=175, name=RGN2E::DELAY_M2D2_SCAT      }
+   { ch=176, name=RGN2E::DELAY_M3D_SCAT       }
+   { ch=177, name=RGN2E::DELAY_OTHER3_SCAT    }
+   { ch=178, name=RGN2E::DELAY_OTHER4_SCAT    }
+   { ch=179, name=RGN2E::WIDTH_BEAM_SCAT      }
+   { ch=180, name=RGN2E::WIDTH_PVAC_SCAT      }
+   { ch=181, name=RGN2E::WIDTH_FAC_SCAT       }
+   { ch=182, name=RGN2E::WIDTH_TOF_SCAT       }
+   { ch=183, name=RGN2E::WIDTH_LAC_SCAT       }
+   { ch=184, name=RGN2E::WIDTH_WC_SCAT        }
+   { ch=185, name=RGN2E::WIDTH_M2D1_SCAT      }
+   { ch=186, name=RGN2E::WIDTH_M2D2_SCAT      }
+   { ch=187, name=RGN2E::WIDTH_M3D_SCAT       }
+   { ch=188, name=RGN2E::WIDTH_OTHER3_SCAT    }
+   { ch=189, name=RGN2E::WIDTH_OTHER4_SCAT    }
+   { ch=190, name=RGN2E::BPS_CTRL_SCAT        }
+   { ch=191, name=RGN2E::BPS_COIN_SCAT        }
+   { ch=192, name=RGN2F::DELAY_BH1_BEAM       }
+   { ch=193, name=RGN2F::DELAY_BH2_BEAM       }
+   { ch=194, name=RGN2F::DELAY_BAC_BEAM       }
+   { ch=195, name=RGN2F::DELAY_HTOF_BEAM      }
+   { ch=196, name=RGN2F::DELAY_OTHER1_BEAM    }
+   { ch=197, name=RGN2F::DELAY_OTHER2_BEAM    }
+   { ch=198, name=RGN2F::WIDTH_BH1_BEAM       }
+   { ch=199, name=RGN2F::WIDTH_BH2_BEAM       }
+   { ch=200, name=RGN2F::WIDTH_BAC_BEAM       }
+   { ch=201, name=RGN2F::WIDTH_HTOF_BEAM      }
+   { ch=202, name=RGN2F::WIDTH_OTHER1_BEAM    }
+   { ch=203, name=RGN2F::WIDTH_OTHER2_BEAM    }
+   { ch=204, name=RGN2F::BPS_CTRL_BEAM        }
+   { ch=205, name=RGN2F::BPS_COIN_BEAM        }
+   { ch=206, name=RGN2F::DELAY_BEAM_SCAT      }
+   { ch=207, name=RGN2F::DELAY_PVAC_SCAT      }
+   { ch=208, name=RGN2F::DELAY_FAC_SCAT       }
+   { ch=209, name=RGN2F::DELAY_TOF_SCAT       }
+   { ch=210, name=RGN2F::DELAY_LAC_SCAT       }
+   { ch=211, name=RGN2F::DELAY_WC_SCAT        }
+   { ch=212, name=RGN2F::DELAY_M2D1_SCAT      }
+   { ch=213, name=RGN2F::DELAY_M2D2_SCAT      }
+   { ch=214, name=RGN2F::DELAY_M3D_SCAT       }
+   { ch=215, name=RGN2F::DELAY_OTHER3_SCAT    }
+   { ch=216, name=RGN2F::DELAY_OTHER4_SCAT    }
+   { ch=217, name=RGN2F::WIDTH_BEAM_SCAT      }
+   { ch=218, name=RGN2F::WIDTH_PVAC_SCAT      }
+   { ch=219, name=RGN2F::WIDTH_FAC_SCAT       }
+   { ch=220, name=RGN2F::WIDTH_TOF_SCAT       }
+   { ch=221, name=RGN2F::WIDTH_LAC_SCAT       }
+   { ch=222, name=RGN2F::WIDTH_WC_SCAT        }
+   { ch=223, name=RGN2F::WIDTH_M2D1_SCAT      }
+   { ch=224, name=RGN2F::WIDTH_M2D2_SCAT      }
+   { ch=225, name=RGN2F::WIDTH_M3D_SCAT       }
+   { ch=226, name=RGN2F::WIDTH_OTHER3_SCAT    }
+   { ch=227, name=RGN2F::WIDTH_OTHER4_SCAT    }
+   { ch=228, name=RGN2F::BPS_CTRL_SCAT        }
+   { ch=229, name=RGN2F::BPS_COIN_SCAT        }
+   { ch=230, name=RGN3::PS_R2A                }
+   { ch=231, name=RGN3::GATE_R2A              }
+   { ch=232, name=RGN3::PS_R2B                }
+   { ch=233, name=RGN3::GATE_R2B              }
+   { ch=234, name=RGN3::PS_R2C                }
+   { ch=235, name=RGN3::GATE_R2C              }
+   { ch=236, name=RGN3::PS_R2D                }
+   { ch=237, name=RGN3::GATE_R2D              }
+   { ch=238, name=RGN3::PS_R2E                }
+   { ch=239, name=RGN3::GATE_R2E              }
+   { ch=240, name=RGN3::PS_R2F                }
+   { ch=241, name=RGN3::GATE_R2F              }
+   { ch=242, name=RGN3::SEL_PSOR              }
+   { ch=243, name=RGN3::RST_PSCNT             }
+   { ch=244, name=RGN4::SEL_EXTCLK            }
+   { ch=245, name=RGN4::SEL_RSV2              }
+   { ch=246, name=RGN4::SEL_CLK10M            }
+   { ch=247, name=RGN4::SEL_CLK1M             }
+   { ch=248, name=RGN4::SEL_CLK100k           }
+   { ch=249, name=RGN4::SEL_CLK10k            }
+   { ch=250, name=RGN4::SEL_CLK1k             }
+   { ch=251, name=RGN4::GATE                  }
+}

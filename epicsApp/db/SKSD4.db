@@ -1,0 +1,9 @@
+record(ai, "K18MAG:D4:FLD")
+{
+	field(DESC, "D4 Probe [T]")
+	field(EGU, "T")
+	field(SCAN, ".5 second")
+	field(PHAS, "0")
+	field(PREC, "7")
+	field(DTYP, "D4ProbeSup")
+}

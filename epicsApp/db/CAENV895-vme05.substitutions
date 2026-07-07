@@ -1,0 +1,21 @@
+# CAENV895 substitutions file
+# ch   :  form 1 to 16
+
+file "db/CAENV895.template" {
+   { name=VME05, ch=1 }
+   { name=VME05, ch=2 }
+   { name=VME05, ch=3 }
+   { name=VME05, ch=4 }
+   { name=VME05, ch=5 }
+   { name=VME05, ch=6 }
+   { name=VME05, ch=7 }
+   { name=VME05, ch=8 }
+   { name=VME05, ch=9 }
+   { name=VME05, ch=10 }
+   { name=VME05, ch=11 }
+   { name=VME05, ch=12 }
+   { name=VME05, ch=13 }
+   { name=VME05, ch=14 }
+   { name=VME05, ch=15 }
+   { name=VME05, ch=16 }
+}

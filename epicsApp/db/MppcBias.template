@@ -1,0 +1,21 @@
+record(waveform, "MppcBias:DATA")
+{
+        field(DESC, "MPPC Bias Status")
+	field(FTVL, "FLOAT")
+        field(NELM, "103")
+	field(SCAN, "Passive")
+	field(PHAS, "0")
+	field(PREC, "1")
+	field(DTYP, "MppcBiasSup")
+}
+
+record(ai, "$(name)")
+{
+	field(SCAN, "Passive")
+	field(INP,  "MppcBias:DATA")
+	field(DTYP, "AiMppcBiasSup")
+	field(PHAS, "1")
+	field(LINR, "LINEAR")
+	field(ESLO, "0.01")
+	field(DESC, "MppcBias@$(ch)")
+}

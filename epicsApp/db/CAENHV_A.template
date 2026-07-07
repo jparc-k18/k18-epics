@@ -1,0 +1,10 @@
+record(waveform, "CAENHV:CRATE$(crate):SLOT$(slot):DATA")
+{
+        field(DESC, "CAEN HV Crate")
+        field(FTVL, "FLOAT")
+        field(NELM, "145")
+        field(SCAN, "20 second")
+        field(PHAS, "0")
+        field(DTYP, "CAENHVSup")
+        field(DESC, "$(BoardType) $(IP) $(slot) $(ChMax)")
+}

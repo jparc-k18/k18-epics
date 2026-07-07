@@ -1,0 +1,19 @@
+record(waveform, "HTTP:HDuser:DATA")
+{
+        field(DESC, "HD USer Status")
+	field(FTVL, "FLOAT")
+        field(NELM, "200")
+	field(SCAN, "5 second")
+	field(PHAS, "0")
+	field(DTYP, "HTTP_hduser_Sup")
+}
+
+record(ai, "$(name)")
+{
+	field(SCAN, "10 second")
+	field(INP,  "HTTP:HDuser:DATA")
+	field(DTYP, "AiHTTPSup")
+	field(PHAS, "1")
+	field(PREC, "4")
+	field(DESC, "HTTP@$(ch)")
+}

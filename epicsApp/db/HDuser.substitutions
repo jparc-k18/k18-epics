@@ -1,0 +1,9 @@
+# HD user substitutions file
+# ch   :  form 1 to 100   (if 0, -999.99 is read out.) 
+
+file "db/HDuser.template" {
+     { name = ACC:HD:T1_MEAN_X,                ch = 17 }
+     { name = ACC:HD:T1_MEAN_Y,                ch = 18 }
+     { name = ACC:HD:T1_SIGMA_X,               ch = 19 }
+     { name = ACC:HD:T1_SIGMA_Y,               ch = 20 }
+}

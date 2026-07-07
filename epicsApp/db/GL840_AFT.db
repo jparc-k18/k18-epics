@@ -1,0 +1,76 @@
+record(waveform, "AFT:DATA")
+{
+        field(DESC, "GL840-AFT Data")
+	field(FTVL, "FLOAT")
+#        field(NELM, "20")
+        field(NELM, "6")
+	field(SCAN, "10 second")
+	field(PHAS, "0")
+	field(DTYP, "GL840_AFT")
+	field(FLNK, "AFT:X-U1:TEMP")
+}
+record(subArray, "AFT:X_U1:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP, "AFT:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "20")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "0")
+	field(FLNK, "AFT:X_U2:TEMP")
+}
+record(subArray, "AFT:X_U2:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP, "AFT:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "20")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "1")
+	field(FLNK, "AFT:Y_U:TEMP")
+}
+record(subArray, "AFT:Y_U:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP, "AFT:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "20")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "2")
+	field(FLNK, "AFT:Y_D:TEMP")
+}
+record(subArray, "AFT:Y_D:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP, "AFT:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "20")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "3")
+	field(FLNK, "AFT:X_D1:TEMP")
+}
+record(subArray, "AFT:X_D1:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP, "AFT:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "20")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "4")
+	field(FLNK, "AFT:X_D2:TEMP")
+}
+record(subArray, "AFT:X_D2:TEMP")
+{
+	field(SCAN, "Passive")
+	field(INP, "AFT:DATA")
+	field(FTVL, "FLOAT")
+	field(MALM, "20")
+	field(NELM, "1")
+	field(PREC, "1")
+	field(INDX, "5")
+}

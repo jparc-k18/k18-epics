@@ -1,0 +1,9 @@
+record(ai, "K18MAG:S2SD1:FLD")
+{
+	field(DESC, "S2SD1 NMR [T]")
+	field(EGU, "T")
+	field(SCAN, "1 second")
+	field(PHAS, "0")
+	field(PREC, "7")
+	field(DTYP, "SKSNMRSup")
+}
